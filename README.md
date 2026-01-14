@@ -28,7 +28,7 @@ The workflow:
 1. Pulls the green and purple images.
 2. Starts both containers on a shared Docker network.
 3. Runs two test cases through the green agent.
-4. Sends results to the AgentBeats callback URL.
+4. Sends results to the AgentBeats callback URL (including per-case duration).
 
 ## Local Run (Optional)
 
@@ -58,3 +58,16 @@ python scripts/run_benchmark.py \
   `/home/wczubal1/projects/tau2/brokercheck/client_short.py` inside the purple
   container to match the green agent's default path.
 - `client.py` depends on the `requests` package; ensure the purple image has it.
+
+## Leaderboard Queries (Optional)
+
+Example query showing latency:
+
+```json
+[
+  {
+    "name": "Latest Runs",
+    "query": "SELECT id, status, passed, total, total_duration_seconds, average_duration_seconds, created_at FROM results ORDER BY created_at DESC"
+  }
+]
+```

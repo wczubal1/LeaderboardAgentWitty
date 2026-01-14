@@ -86,6 +86,7 @@ async def _run_case(
     config: dict[str, object],
     http_timeout: int,
 ) -> dict[str, object]:
+    start = time.monotonic()
     async with httpx.AsyncClient(timeout=http_timeout) as httpx_client:
         resolver = A2ACardResolver(green_url, httpx_client)
         card = await resolver.get_agent_card()
@@ -104,7 +105,9 @@ async def _run_case(
             parts=[Part(root=TextPart(text=json.dumps(payload)))],
         )
         events = [event async for event in client.send_message(msg)]
-        return _extract_result(events)
+        result = _extract_result(events)
+        result["duration_seconds"] = round(time.monotonic() - start, 3)
+        return result
 
 
 def _extract_result(events: list[object]) -> dict[str, object]:
@@ -204,6 +207,7 @@ def main() -> None:
     _wait_for_url("http://localhost:9010/.well-known/agent-card.json")
 
     results: list[dict[str, object]] = []
+    overall_start = time.monotonic()
     for case in cases:
         case_config = {
             "symbols": case.get("symbols", []),
@@ -223,17 +227,22 @@ def main() -> None:
             {
                 "name": case.get("name", ""),
                 "status": result.get("status"),
+                "duration_seconds": result.get("duration_seconds"),
                 "details": result.get("data"),
             }
         )
 
     passed = sum(1 for item in results if item.get("status") == "pass")
     overall = "pass" if passed == len(results) else "fail"
+    total_duration = round(time.monotonic() - overall_start, 3)
+    avg_duration = round(total_duration / len(results), 3) if results else None
 
     payload = {
         "status": overall,
         "passed": passed,
         "total": len(results),
+        "total_duration_seconds": total_duration,
+        "average_duration_seconds": avg_duration,
         "results": results,
     }
 
