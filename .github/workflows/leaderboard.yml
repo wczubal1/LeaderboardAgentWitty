@@ -1,0 +1,58 @@
+name: Run Leaderboard Benchmark
+
+on:
+  repository_dispatch:
+    types: [agentbeats]
+  workflow_dispatch:
+    inputs:
+      purple_image:
+        description: "Candidate purple image (ghcr.io/...)"
+        required: false
+      use_mcp:
+        description: "Enable MCP server inside purple container"
+        required: false
+        default: "false"
+
+jobs:
+  run-benchmark:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+
+    env:
+      GREEN_IMAGE: ghcr.io/wczubal1/greenagentwitty:latest
+      PURPLE_IMAGE: ${{ github.event.client_payload.image || inputs.purple_image || 'ghcr.io/wczubal1/purpleagentwitty:latest' }}
+      USE_MCP: ${{ github.event.client_payload.use_mcp || inputs.use_mcp || 'false' }}
+      FINRA_CLIENT_ID: ${{ secrets.FINRA_CLIENT_ID }}
+      FINRA_CLIENT_SECRET: ${{ secrets.FINRA_CLIENT_SECRET }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ secrets.OPENAI_MODEL }}
+      AGENTBEATS_CALLBACK_URL: ${{ secrets.AGENTBEATS_CALLBACK_URL }}
+      AGENTBEATS_CALLBACK_TOKEN: ${{ secrets.AGENTBEATS_CALLBACK_TOKEN }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Log in to GHCR (optional)
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Run benchmark
+        run: |
+          CMD="python scripts/run_benchmark.py --green-image \"$GREEN_IMAGE\" --purple-image \"$PURPLE_IMAGE\""
+          if [ "$USE_MCP" = "true" ]; then
+            CMD="$CMD --use-mcp"
+          fi
+          echo "Running: $CMD"
+          eval "$CMD"

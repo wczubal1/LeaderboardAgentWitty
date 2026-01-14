@@ -1,0 +1,14 @@
+{
+  "cases": [
+    {
+      "name": "case-1",
+      "settlement_date": "2025-05-15",
+      "symbols": ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL"]
+    },
+    {
+      "name": "case-2",
+      "settlement_date": "2025-05-31",
+      "symbols": ["JPM", "XOM", "UNH", "PG", "TSLA"]
+    }
+  ]
+}

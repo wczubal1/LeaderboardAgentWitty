@@ -1,0 +1,244 @@
+from __future__ import annotations
+
+import argparse
+import asyncio
+import json
+import os
+import subprocess
+import time
+from pathlib import Path
+from uuid import uuid4
+
+import httpx
+from a2a.client import A2ACardResolver, ClientConfig, ClientFactory
+from a2a.types import Message, Part, Role, TextPart
+
+
+DEFAULT_GREEN_IMAGE = "ghcr.io/wczubal1/greenagentwitty:latest"
+DEFAULT_PURPLE_IMAGE = "ghcr.io/wczubal1/purpleagentwitty:latest"
+DEFAULT_CASES_PATH = Path(__file__).resolve().parents[1] / "test_cases.json"
+
+
+def _run_command(cmd: list[str]) -> None:
+    subprocess.run(cmd, check=True)
+
+
+def _start_container(
+    *,
+    name: str,
+    image: str,
+    port: int,
+    network: str,
+    env: dict[str, str] | None = None,
+    mounts: list[str] | None = None,
+    extra_args: list[str] | None = None,
+) -> None:
+    cmd = ["docker", "run", "-d", "--rm", "--name", name, "--network", network]
+    cmd.extend(["-p", f"{port}:{port}"])
+    if env:
+        for key, value in env.items():
+            if value:
+                cmd.extend(["-e", f"{key}={value}"])
+    if mounts:
+        for mount in mounts:
+            cmd.extend(["-v", mount])
+    cmd.append(image)
+    if extra_args:
+        cmd.extend(extra_args)
+    _run_command(cmd)
+
+
+def _ensure_network(name: str) -> None:
+    existing = subprocess.run(
+        ["docker", "network", "ls", "--format", "{{.Name}}"],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.splitlines()
+    if name not in existing:
+        _run_command(["docker", "network", "create", name])
+
+
+def _wait_for_url(url: str, timeout: int = 30) -> None:
+    deadline = time.time() + timeout
+    while time.time() < deadline:
+        try:
+            response = httpx.get(url, timeout=2)
+            if response.status_code == 200:
+                return
+        except httpx.HTTPError:
+            time.sleep(1)
+    raise RuntimeError(f"Timed out waiting for {url}")
+
+
+def _load_cases(path: Path) -> list[dict[str, object]]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    cases = payload.get("cases")
+    if not isinstance(cases, list) or not cases:
+        raise ValueError("test_cases.json must include a non-empty cases list")
+    return [case for case in cases if isinstance(case, dict)]
+
+
+async def _run_case(
+    *,
+    green_url: str,
+    purple_url: str,
+    config: dict[str, object],
+    http_timeout: int,
+) -> dict[str, object]:
+    async with httpx.AsyncClient(timeout=http_timeout) as httpx_client:
+        resolver = A2ACardResolver(green_url, httpx_client)
+        card = await resolver.get_agent_card()
+        client = ClientFactory(
+            ClientConfig(httpx_client=httpx_client, streaming=False)
+        ).create(card)
+
+        payload = {
+            "participants": {"purple": purple_url},
+            "config": config,
+        }
+        msg = Message(
+            kind="message",
+            role=Role.user,
+            message_id=uuid4().hex,
+            parts=[Part(root=TextPart(text=json.dumps(payload)))],
+        )
+        events = [event async for event in client.send_message(msg)]
+        return _extract_result(events)
+
+
+def _extract_result(events: list[object]) -> dict[str, object]:
+    dumps: list[dict[str, object]] = []
+    for event in events:
+        if hasattr(event, "model_dump"):
+            dumps.append(event.model_dump())
+        elif isinstance(event, dict):
+            dumps.append(event)
+
+    for event in reversed(dumps):
+        if event.get("kind") != "task-update":
+            continue
+        task = event.get("task") or {}
+        artifacts = task.get("artifacts") or []
+        for artifact in artifacts:
+            for part in artifact.get("parts", []):
+                if part.get("kind") == "data":
+                    data = part.get("data") or {}
+                    status = str(data.get("status") or "")
+                    return {
+                        "status": status,
+                        "data": data,
+                    }
+    return {"status": "error", "data": {"error": "No result artifact found"}}
+
+
+def _post_results(payload: dict[str, object]) -> None:
+    url = os.environ.get("AGENTBEATS_CALLBACK_URL")
+    if not url:
+        print(json.dumps(payload, indent=2))
+        return
+    headers = {"Content-Type": "application/json"}
+    token = os.environ.get("AGENTBEATS_CALLBACK_TOKEN")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    response = httpx.post(url, json=payload, headers=headers, timeout=30)
+    response.raise_for_status()
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Run the FINRA leaderboard benchmark.")
+    parser.add_argument("--green-image", default=DEFAULT_GREEN_IMAGE)
+    parser.add_argument("--purple-image", default=DEFAULT_PURPLE_IMAGE)
+    parser.add_argument("--cases", default=str(DEFAULT_CASES_PATH))
+    parser.add_argument("--http-timeout", type=int, default=180)
+    parser.add_argument(
+        "--use-mcp",
+        action="store_true",
+        help="Enable MCP server for FINRA tool calls inside the purple container.",
+    )
+    args = parser.parse_args()
+
+    cases = _load_cases(Path(args.cases))
+
+    finra_client_id = os.environ.get("FINRA_CLIENT_ID", "")
+    finra_client_secret = os.environ.get("FINRA_CLIENT_SECRET", "")
+    openai_key = os.environ.get("OPENAI_API_KEY", "")
+    openai_model = os.environ.get("OPENAI_MODEL", "")
+
+    network = "agent-net"
+    _ensure_network(network)
+
+    tools_dir = Path(__file__).resolve().parents[1] / "tools"
+    brokercheck_dir = "/home/wczubal1/projects/tau2/brokercheck"
+    mounts = [
+        f"{tools_dir}/client_short.py:{brokercheck_dir}/client_short.py:ro",
+        f"{tools_dir}/client.py:{brokercheck_dir}/client.py:ro",
+    ]
+
+    _start_container(
+        name="green",
+        image=args.green_image,
+        port=9009,
+        network=network,
+        extra_args=["--host", "0.0.0.0", "--port", "9009"],
+    )
+    purple_env = {
+        "OPENAI_API_KEY": openai_key,
+        "OPENAI_MODEL": openai_model,
+    }
+    if args.use_mcp:
+        purple_env["MCP_SERVER_COMMAND"] = "python /opt/mcp_server.py"
+
+    _start_container(
+        name="purple",
+        image=args.purple_image,
+        port=9010,
+        network=network,
+        env=purple_env,
+        mounts=mounts
+        + [f"{tools_dir}/mcp_server.py:/opt/mcp_server.py:ro"],
+        extra_args=["--host", "0.0.0.0", "--port", "9010"],
+    )
+
+    _wait_for_url("http://localhost:9009/.well-known/agent-card.json")
+    _wait_for_url("http://localhost:9010/.well-known/agent-card.json")
+
+    results: list[dict[str, object]] = []
+    for case in cases:
+        case_config = {
+            "symbols": case.get("symbols", []),
+            "settlement_date": case.get("settlement_date", ""),
+            "finra_client_id": finra_client_id,
+            "finra_client_secret": finra_client_secret,
+        }
+        result = asyncio.run(
+            _run_case(
+                green_url="http://localhost:9009",
+                purple_url="http://purple:9010",
+                config=case_config,
+                http_timeout=args.http_timeout,
+            )
+        )
+        results.append(
+            {
+                "name": case.get("name", ""),
+                "status": result.get("status"),
+                "details": result.get("data"),
+            }
+        )
+
+    passed = sum(1 for item in results if item.get("status") == "pass")
+    overall = "pass" if passed == len(results) else "fail"
+
+    payload = {
+        "status": overall,
+        "passed": passed,
+        "total": len(results),
+        "results": results,
+    }
+
+    _post_results(payload)
+
+
+if __name__ == "__main__":
+    main()

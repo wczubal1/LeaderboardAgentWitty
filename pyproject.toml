@@ -1,0 +1,15 @@
+[project]
+name = "finra-leaderboard-runner"
+version = "1.0.0"
+description = "Leaderboard runner for FINRA short-interest benchmark"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "a2a-sdk>=0.3.20",
+    "httpx>=0.28.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6.0",
+]
