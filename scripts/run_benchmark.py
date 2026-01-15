@@ -175,6 +175,12 @@ def _extract_result(events: list[object]) -> dict[str, object]:
     for event in events:
         if hasattr(event, "model_dump"):
             dumps.append(event.model_dump())
+        elif isinstance(event, tuple) and len(event) == 2:
+            task = event[0]
+            if hasattr(task, "model_dump"):
+                dumps.append({"kind": "task-update", "task": task.model_dump()})
+            elif isinstance(task, dict):
+                dumps.append({"kind": "task-update", "task": task})
         elif isinstance(event, dict):
             dumps.append(event)
 
