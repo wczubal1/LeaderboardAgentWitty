@@ -310,7 +310,14 @@ def main() -> None:
         image=green_image,
         port=9009,
         network=network,
-        extra_args=["--host", "0.0.0.0", "--port", "9009"],
+        extra_args=[
+            "--host",
+            "0.0.0.0",
+            "--port",
+            "9009",
+            "--card-url",
+            "http://localhost:9009/",
+        ],
     )
     purple_env = {
         "OPENAI_API_KEY": openai_key,
@@ -327,7 +334,14 @@ def main() -> None:
         env=purple_env,
         mounts=mounts
         + [f"{tools_dir}/mcp_server.py:/opt/mcp_server.py:ro"],
-        extra_args=["--host", "0.0.0.0", "--port", "9010"],
+        extra_args=[
+            "--host",
+            "0.0.0.0",
+            "--port",
+            "9010",
+            "--card-url",
+            "http://purple:9010/",
+        ],
     )
 
     _wait_for_url("http://localhost:9009/.well-known/agent-card.json")
