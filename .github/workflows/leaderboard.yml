@@ -50,7 +50,7 @@ jobs:
 
       - name: Run benchmark
         run: |
-          CMD="python scripts/run_benchmark.py --green-image \"$GREEN_IMAGE\" --purple-image \"$PURPLE_IMAGE\""
+          CMD="uv run python scripts/run_benchmark.py --green-image \"$GREEN_IMAGE\" --purple-image \"$PURPLE_IMAGE\""
           if [ "$USE_MCP" = "true" ]; then
             CMD="$CMD --use-mcp"
           fi
