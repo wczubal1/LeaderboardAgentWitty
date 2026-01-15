@@ -1,0 +1,576 @@
+{
+  "id": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "status": "fail",
+  "passed": 0,
+  "total": 2,
+  "total_duration_seconds": 75.871,
+  "average_duration_seconds": 37.935,
+  "results": [
+    {
+      "name": "case-1",
+      "status": "fail",
+      "duration_seconds": 36.625,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "AAPL: no numeric quantity found in attempts.",
+          "MSFT: no numeric quantity found in attempts.",
+          "NVDA: no numeric quantity found in attempts.",
+          "AMZN: no numeric quantity found in attempts.",
+          "GOOGL: no numeric quantity found in attempts.",
+          "No numeric short interest values returned."
+        ],
+        "symbols": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMZN",
+          "GOOGL"
+        ],
+        "settlement_date": "2025-05-15",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [
+          {
+            "symbol": "AAPL",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "MSFT",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "NVDA",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "AMZN",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "GOOGL",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          }
+        ],
+        "purple_response": {
+          "status": "error",
+          "requested_settlement_date": "2025-05-15",
+          "best_symbol": "",
+          "best_quantity": 0,
+          "results": [
+            {
+              "symbol": "AAPL",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "MSFT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Invalid Credentials\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "NVDA",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "AMZN",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "GOOGL",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            }
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "case-2",
+      "status": "fail",
+      "duration_seconds": 38.902,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "JPM: no numeric quantity found in attempts.",
+          "XOM: no numeric quantity found in attempts.",
+          "UNH: no numeric quantity found in attempts.",
+          "PG: no numeric quantity found in attempts.",
+          "TSLA: no numeric quantity found in attempts.",
+          "No numeric short interest values returned."
+        ],
+        "symbols": [
+          "JPM",
+          "XOM",
+          "UNH",
+          "PG",
+          "TSLA"
+        ],
+        "settlement_date": "2025-05-31",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [
+          {
+            "symbol": "JPM",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "XOM",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "UNH",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "PG",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "TSLA",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "record": null
+          }
+        ],
+        "purple_response": {
+          "status": "error",
+          "requested_settlement_date": "2025-05-31",
+          "best_symbol": "",
+          "best_quantity": 0,
+          "results": [
+            {
+              "symbol": "JPM",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "XOM",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "UNH",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "PG",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "TSLA",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: Failed to obtain FINRA access token (400): {\"error_message\":\"Account is locked or cancelled\",\"error\":\"invalid_client\"}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "record": null
+            }
+          ],
+          "errors": []
+        }
+      }
+    }
+  ],
+  "created_at": "2026-01-15T20:42:11.453058Z",
+  "green_agent_id": "019bab8b-9244-7e73-8dbd-01234484908b",
+  "purple_agent_id": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "purple_image": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "config": {
+    "cases": [
+      {
+        "name": "case-1",
+        "settlement_date": "2025-05-15",
+        "symbols": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMZN",
+          "GOOGL"
+        ]
+      },
+      {
+        "name": "case-2",
+        "settlement_date": "2025-05-31",
+        "symbols": [
+          "JPM",
+          "XOM",
+          "UNH",
+          "PG",
+          "TSLA"
+        ]
+      }
+    ]
+  }
+}
