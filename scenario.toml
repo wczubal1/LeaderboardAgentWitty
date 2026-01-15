@@ -8,7 +8,9 @@ name = "purple"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENAI_MODEL = "${OPENAI_MODEL}", FINRA_CLIENT_ID = "${FINRA_CLIENT_ID}", FINRA_CLIENT_SECRET = "${FINRA_CLIENT_SECRET}" }
 
 [config]
+# Seed 321, symbols sampled without replacement from SP500symbols.csv
 cases = [
-  { name = "case-1", settlement_date = "2025-05-15", symbols = ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL"] },
-  { name = "case-2", settlement_date = "2025-05-31", symbols = ["JPM", "XOM", "UNH", "PG", "TSLA"] }
+  { name = "case-1", settlement_date = "2025-05-15", symbols = ["DVA", "FISV", "BIIB"] },
+  { name = "case-2", settlement_date = "2025-05-31", symbols = ["FDS", "LII", "WST", "HAS", "EQT"] },
+  { name = "case-3", settlement_date = "2025-06-15", symbols = ["WMB", "PSX", "ZBH", "CPRT", "WRB", "MRK", "HLT", "GM", "RF", "TJX"] }
 ]
