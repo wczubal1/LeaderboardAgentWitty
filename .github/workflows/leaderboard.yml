@@ -1,6 +1,10 @@
 name: Run Leaderboard Benchmark
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "results/**"
   repository_dispatch:
     types: [agentbeats]
   workflow_dispatch:
@@ -17,7 +21,7 @@ jobs:
   run-benchmark:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: read
 
     env:
@@ -56,3 +60,16 @@ jobs:
           fi
           echo "Running: $CMD"
           eval "$CMD"
+
+      - name: Commit results
+        if: success()
+        run: |
+          if git status --porcelain | grep -q '^?? results/\|^ M results/\|^A  results/'; then
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add results
+            git commit -m "Add leaderboard results"
+            git push origin main
+          else
+            echo "No results to commit"
+          fi

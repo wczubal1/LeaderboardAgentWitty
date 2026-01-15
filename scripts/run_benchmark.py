@@ -1,11 +1,14 @@
 from __future__ import annotations
 
 import argparse
+import tomllib
 import asyncio
 import json
 import os
+import re
 import subprocess
 import time
+from datetime import datetime
 from pathlib import Path
 from uuid import uuid4
 
@@ -87,7 +90,46 @@ def _wait_for_url(url: str, timeout: int = 30) -> None:
     raise RuntimeError(f"Timed out waiting for {url}")
 
 
+def _load_scenario(path: Path) -> tuple[list[dict[str, object]], str | None, str | None]:
+    data = tomllib.loads(path.read_text(encoding="utf-8"))
+    config = data.get("config") or {}
+    cases = config.get("cases") or []
+    if not isinstance(cases, list) or not cases:
+        raise ValueError("scenario.toml must include config.cases list")
+
+    green = data.get("green_agent") or {}
+    green_id = green.get("agentbeats_id") or None
+
+    purple_id = None
+    for participant in data.get("participants", []) or []:
+        if not isinstance(participant, dict):
+            continue
+        if participant.get("name") == "purple":
+            purple_id = participant.get("agentbeats_id") or None
+            break
+
+    return cases, green_id, purple_id
+
+
+def _slugify(value: str) -> str:
+    slug = re.sub(r"[^a-zA-Z0-9]+", "-", value).strip("-")
+    return slug.lower() or "unknown"
+
+
+def _write_results(payload: dict[str, object], results_dir: Path) -> Path:
+    results_dir.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    identifier = _slugify(str(payload.get("id", "unknown")))
+    filename = f"{timestamp}_{identifier}.json"
+    output_path = results_dir / filename
+    output_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    return output_path
+
+
 def _load_cases(path: Path) -> list[dict[str, object]]:
+    if path.suffix == ".toml":
+        cases, _, _ = _load_scenario(path)
+        return cases
     payload = json.loads(path.read_text(encoding="utf-8"))
     cases = payload.get("cases")
     if not isinstance(cases, list) or not cases:
@@ -101,16 +143,18 @@ async def _run_case(
     purple_url: str,
     config: dict[str, object],
     http_timeout: int,
+    agent_id: str,
 ) -> dict[str, object]:
     start = time.monotonic()
     async with httpx.AsyncClient(timeout=http_timeout) as httpx_client:
-        resolver = A2ACardResolver(httpx_client, green_url)
+        resolver = A2ACardResolver(green_url, httpx_client)
         card = await resolver.get_agent_card()
         client = ClientFactory(
             ClientConfig(httpx_client=httpx_client, streaming=False)
         ).create(card)
 
         payload = {
+            "id": agent_id,
             "participants": {"purple": purple_url},
             "config": config,
         }
@@ -169,6 +213,7 @@ def main() -> None:
     parser.add_argument("--green-image", default=DEFAULT_GREEN_IMAGE)
     parser.add_argument("--purple-image", default=DEFAULT_PURPLE_IMAGE)
     parser.add_argument("--cases", default=str(DEFAULT_CASES_PATH))
+    parser.add_argument("--scenario", default=str(Path(__file__).resolve().parents[1] / "scenario.toml"))
     parser.add_argument("--http-timeout", type=int, default=180)
     parser.add_argument(
         "--use-mcp",
@@ -177,15 +222,28 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    scenario_path = Path(args.scenario)
+    scenario_cases = None
+    green_id = None
+    purple_id = None
+    if scenario_path.exists():
+        scenario_cases, green_id, purple_id = _load_scenario(scenario_path)
+
+
     green_image = _normalize_image(args.green_image, DEFAULT_GREEN_IMAGE)
     purple_image = _normalize_image(args.purple_image, DEFAULT_PURPLE_IMAGE)
+    agent_id = purple_id or purple_image
 
-    cases = _load_cases(Path(args.cases))
+    cases = scenario_cases or _load_cases(Path(args.cases))
 
     finra_client_id = os.environ.get("FINRA_CLIENT_ID", "")
     finra_client_secret = os.environ.get("FINRA_CLIENT_SECRET", "")
     openai_key = os.environ.get("OPENAI_API_KEY", "")
     openai_model = os.environ.get("OPENAI_MODEL", "")
+
+    green_id = green_id or os.environ.get("GREEN_AGENT_ID")
+    purple_id = purple_id or os.environ.get("PURPLE_AGENT_ID")
+
 
     network = "agent-net"
     _ensure_network(network)
@@ -240,6 +298,7 @@ def main() -> None:
                 purple_url="http://purple:9010",
                 config=case_config,
                 http_timeout=args.http_timeout,
+                agent_id=agent_id,
             )
         )
         results.append(
@@ -255,16 +314,25 @@ def main() -> None:
     overall = "pass" if passed == len(results) else "fail"
     total_duration = round(time.monotonic() - overall_start, 3)
     avg_duration = round(total_duration / len(results), 3) if results else None
+    created_at = datetime.utcnow().isoformat() + "Z"
 
     payload = {
+        "id": purple_id or purple_image,
         "status": overall,
         "passed": passed,
         "total": len(results),
         "total_duration_seconds": total_duration,
         "average_duration_seconds": avg_duration,
         "results": results,
+        "created_at": created_at,
+        "green_agent_id": green_id,
+        "purple_agent_id": purple_id or purple_image,
+        "purple_image": purple_image,
+        "config": {"cases": cases},
     }
 
+    results_dir = Path(__file__).resolve().parents[1] / "results"
+    _write_results(payload, results_dir)
     _post_results(payload)
 
 
