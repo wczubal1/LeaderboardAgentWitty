@@ -178,6 +178,23 @@ def _extract_result(events: list[object]) -> dict[str, object]:
         elif isinstance(event, dict):
             dumps.append(event)
 
+    status_message = None
+    for event in reversed(dumps):
+        if event.get("kind") != "task-update":
+            continue
+        task = event.get("task") or {}
+        status = task.get("status") or {}
+        message = status.get("message") or {}
+        parts = message.get("parts") or []
+        texts = [
+            part.get("text")
+            for part in parts
+            if part.get("kind") == "text" and part.get("text")
+        ]
+        if texts:
+            status_message = " ".join(texts)
+        break
+
     for event in reversed(dumps):
         if event.get("kind") != "task-update":
             continue
@@ -192,7 +209,34 @@ def _extract_result(events: list[object]) -> dict[str, object]:
                         "status": status,
                         "data": data,
                     }
-    return {"status": "error", "data": {"error": "No result artifact found"}}
+    error = {"error": "No result artifact found"}
+    if status_message:
+        error["status_message"] = status_message
+    return {"status": "error", "data": error}
+
+
+def _dump_container_logs(name: str) -> None:
+    print(f"\n--- docker logs {name} ---")
+    result = subprocess.run(
+        ["docker", "logs", name],
+        capture_output=True,
+        text=True,
+    )
+    if result.stdout:
+        print(result.stdout)
+    if result.stderr:
+        print(result.stderr)
+    if result.returncode != 0:
+        print(f"[warn] docker logs {name} failed with code {result.returncode}")
+
+
+def _cleanup_container(name: str) -> None:
+    subprocess.run(
+        ["docker", "rm", "-f", name],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
 
 
 def _post_results(payload: dict[str, object]) -> None:
@@ -285,30 +329,41 @@ def main() -> None:
 
     results: list[dict[str, object]] = []
     overall_start = time.monotonic()
-    for case in cases:
-        case_config = {
-            "symbols": case.get("symbols", []),
-            "settlement_date": case.get("settlement_date", ""),
-            "finra_client_id": finra_client_id,
-            "finra_client_secret": finra_client_secret,
-        }
-        result = asyncio.run(
-            _run_case(
-                green_url="http://localhost:9009",
-                purple_url="http://purple:9010",
-                config=case_config,
-                http_timeout=args.http_timeout,
-                agent_id=agent_id,
-            )
-        )
-        results.append(
-            {
-                "name": case.get("name", ""),
-                "status": result.get("status"),
-                "duration_seconds": result.get("duration_seconds"),
-                "details": result.get("data"),
+    case_failures = False
+    try:
+        for case in cases:
+            case_config = {
+                "symbols": case.get("symbols", []),
+                "settlement_date": case.get("settlement_date", ""),
+                "finra_client_id": finra_client_id,
+                "finra_client_secret": finra_client_secret,
             }
-        )
+            result = asyncio.run(
+                _run_case(
+                    green_url="http://localhost:9009",
+                    purple_url="http://purple:9010",
+                    config=case_config,
+                    http_timeout=args.http_timeout,
+                    agent_id=agent_id,
+                )
+            )
+            status = result.get("status")
+            if status != "pass":
+                case_failures = True
+            results.append(
+                {
+                    "name": case.get("name", ""),
+                    "status": status,
+                    "duration_seconds": result.get("duration_seconds"),
+                    "details": result.get("data"),
+                }
+            )
+    finally:
+        if case_failures:
+            _dump_container_logs("green")
+            _dump_container_logs("purple")
+        _cleanup_container("purple")
+        _cleanup_container("green")
 
     passed = sum(1 for item in results if item.get("status") == "pass")
     overall = "pass" if passed == len(results) else "fail"
