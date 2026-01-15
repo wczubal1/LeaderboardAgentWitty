@@ -1,0 +1,14 @@
+[green_agent]
+agentbeats_id = "019bab8b-9244-7e73-8dbd-01234484908b"
+env = { FINRA_CLIENT_ID = "${FINRA_CLIENT_ID}", FINRA_CLIENT_SECRET = "${FINRA_CLIENT_SECRET}" }
+
+[[participants]]
+agentbeats_id = ""
+name = "purple"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENAI_MODEL = "${OPENAI_MODEL}", FINRA_CLIENT_ID = "${FINRA_CLIENT_ID}", FINRA_CLIENT_SECRET = "${FINRA_CLIENT_SECRET}" }
+
+[config]
+cases = [
+  { name = "case-1", settlement_date = "2025-05-15", symbols = ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL"] },
+  { name = "case-2", settlement_date = "2025-05-31", symbols = ["JPM", "XOM", "UNH", "PG", "TSLA"] }
+]

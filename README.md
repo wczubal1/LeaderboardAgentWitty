@@ -72,3 +72,11 @@ Example query showing latency:
 ]
 ```
 
+
+
+## Scenario Template
+
+The AgentBeats scenario definition lives in `scenario.toml`. Submitters fill in the
+purple agent ID and secrets, while the green agent ID and default test cases are
+pre-filled.
+
