@@ -23,6 +23,22 @@ def _run_command(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
+def _normalize_image(value: str | None, fallback: str) -> str:
+    if not value:
+        return fallback
+    raw = str(value).strip()
+    if not raw or raw.lower() in {"none", "null"}:
+        return fallback
+    lowered = raw.lower()
+    for prefix in ("purple_image:", "green_image:", "image:"):
+        if lowered.startswith(prefix):
+            raw = raw.split(":", 1)[1].strip()
+            break
+    if " " in raw:
+        raw = raw.replace(",", " ").split()[-1]
+    return raw or fallback
+
+
 def _start_container(
     *,
     name: str,
@@ -161,6 +177,9 @@ def main() -> None:
     )
     args = parser.parse_args()
 
+    green_image = _normalize_image(args.green_image, DEFAULT_GREEN_IMAGE)
+    purple_image = _normalize_image(args.purple_image, DEFAULT_PURPLE_IMAGE)
+
     cases = _load_cases(Path(args.cases))
 
     finra_client_id = os.environ.get("FINRA_CLIENT_ID", "")
@@ -180,7 +199,7 @@ def main() -> None:
 
     _start_container(
         name="green",
-        image=args.green_image,
+        image=green_image,
         port=9009,
         network=network,
         extra_args=["--host", "0.0.0.0", "--port", "9009"],
@@ -194,7 +213,7 @@ def main() -> None:
 
     _start_container(
         name="purple",
-        image=args.purple_image,
+        image=purple_image,
         port=9010,
         network=network,
         env=purple_env,
