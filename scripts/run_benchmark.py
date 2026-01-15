@@ -147,7 +147,7 @@ async def _run_case(
 ) -> dict[str, object]:
     start = time.monotonic()
     async with httpx.AsyncClient(timeout=http_timeout) as httpx_client:
-        resolver = A2ACardResolver(green_url, httpx_client)
+        resolver = A2ACardResolver(httpx_client, green_url)
         card = await resolver.get_agent_card()
         client = ClientFactory(
             ClientConfig(httpx_client=httpx_client, streaming=False)
