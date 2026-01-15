@@ -53,6 +53,9 @@ python scripts/run_benchmark.py \
 
 ## Notes
 
+Results are written to the `results/` directory in this repo, and the
+leaderboard refresh reads those JSON files.
+
 - `tools/client_short.py` and `tools/client.py` are copied from the brokercheck project.
 - The benchmark mounts those tools to
   `/home/wczubal1/projects/tau2/brokercheck/client_short.py` inside the purple
