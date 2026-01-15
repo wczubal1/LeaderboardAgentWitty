@@ -1,0 +1,864 @@
+{
+  "id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "status": "fail",
+  "passed": 1,
+  "total": 2,
+  "total_duration_seconds": 115.082,
+  "average_duration_seconds": 57.541,
+  "results": [
+    {
+      "name": "case-1",
+      "status": "pass",
+      "duration_seconds": 57.209,
+      "details": {
+        "status": "pass",
+        "errors": [],
+        "symbols": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMZN",
+          "GOOGL"
+        ],
+        "settlement_date": "2025-05-15",
+        "requested_date_reason": "provided",
+        "best_symbol": "NVDA",
+        "best_quantity": 243993623.0,
+        "results": [
+          {
+            "symbol": "AAPL",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 105169332,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 113127198,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 105169332,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 108598767,
+              "averageDailyVolumeQuantity": 58066315,
+              "issueName": "Apple Inc. Common Stock",
+              "currentShortPositionQuantity": 105169332,
+              "changePreviousNumber": -3429435,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "AAPL",
+              "daysToCoverQuantity": 1.81,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": -3.16
+            }
+          },
+          {
+            "symbol": "MSFT",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 57074580,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 51249494,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 57074580,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 50313676,
+              "averageDailyVolumeQuantity": 24840919,
+              "issueName": "Microsoft Corporation Common S",
+              "currentShortPositionQuantity": 57074580,
+              "changePreviousNumber": 6760904,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "MSFT",
+              "daysToCoverQuantity": 2.3,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": 13.44
+            }
+          },
+          {
+            "symbol": "NVDA",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 243993623,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 262957336,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 243993623,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 249766546,
+              "averageDailyVolumeQuantity": 209670213,
+              "issueName": "NVIDIA Corporation Common Stoc",
+              "currentShortPositionQuantity": 243993623,
+              "changePreviousNumber": -5772923,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "NVDA",
+              "daysToCoverQuantity": 1.16,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": -2.31
+            }
+          },
+          {
+            "symbol": "AMZN",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 71501108,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 71194634,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 71501108,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 65739202,
+              "averageDailyVolumeQuantity": 50826617,
+              "issueName": "Amazon.com, Inc. Common Stock",
+              "currentShortPositionQuantity": 71501108,
+              "changePreviousNumber": 5761906,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "AMZN",
+              "daysToCoverQuantity": 1.41,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": 8.76
+            }
+          },
+          {
+            "symbol": "GOOGL",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 74301622,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 68672977,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 74301622,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 68993462,
+              "averageDailyVolumeQuantity": 43676977,
+              "issueName": "Alphabet Inc. Class A Common S",
+              "currentShortPositionQuantity": 74301622,
+              "changePreviousNumber": 5308160,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "GOOGL",
+              "daysToCoverQuantity": 1.7,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": 7.69
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-05-15",
+          "best_symbol": "NVDA",
+          "best_quantity": 243993623,
+          "results": [
+            {
+              "symbol": "AAPL",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 105169332,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 113127198,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 105169332,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 108598767,
+                "averageDailyVolumeQuantity": 58066315,
+                "issueName": "Apple Inc. Common Stock",
+                "currentShortPositionQuantity": 105169332,
+                "changePreviousNumber": -3429435,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "AAPL",
+                "daysToCoverQuantity": 1.81,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": -3.16
+              }
+            },
+            {
+              "symbol": "MSFT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 57074580,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 51249494,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 57074580,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 50313676,
+                "averageDailyVolumeQuantity": 24840919,
+                "issueName": "Microsoft Corporation Common S",
+                "currentShortPositionQuantity": 57074580,
+                "changePreviousNumber": 6760904,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "MSFT",
+                "daysToCoverQuantity": 2.3,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": 13.44
+              }
+            },
+            {
+              "symbol": "NVDA",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 243993623,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 262957336,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 243993623,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 249766546,
+                "averageDailyVolumeQuantity": 209670213,
+                "issueName": "NVIDIA Corporation Common Stoc",
+                "currentShortPositionQuantity": 243993623,
+                "changePreviousNumber": -5772923,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "NVDA",
+                "daysToCoverQuantity": 1.16,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": -2.31
+              }
+            },
+            {
+              "symbol": "AMZN",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 71501108,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 71194634,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 71501108,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 65739202,
+                "averageDailyVolumeQuantity": 50826617,
+                "issueName": "Amazon.com, Inc. Common Stock",
+                "currentShortPositionQuantity": 71501108,
+                "changePreviousNumber": 5761906,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "AMZN",
+                "daysToCoverQuantity": 1.41,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": 8.76
+              }
+            },
+            {
+              "symbol": "GOOGL",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 74301622,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 68672977,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 74301622,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 68993462,
+                "averageDailyVolumeQuantity": 43676977,
+                "issueName": "Alphabet Inc. Class A Common S",
+                "currentShortPositionQuantity": 74301622,
+                "changePreviousNumber": 5308160,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "GOOGL",
+                "daysToCoverQuantity": 1.7,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": 7.69
+              }
+            }
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "case-2",
+      "status": "fail",
+      "duration_seconds": 57.477,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Best quantity mismatch: expected 76998079.0, got 85015009."
+        ],
+        "symbols": [
+          "JPM",
+          "XOM",
+          "UNH",
+          "PG",
+          "TSLA"
+        ],
+        "settlement_date": "2025-05-31",
+        "requested_date_reason": "provided",
+        "best_symbol": "TSLA",
+        "best_quantity": 76998079.0,
+        "results": [
+          {
+            "symbol": "JPM",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 30539508,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 27009989,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 27009989,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 30539508,
+              "averageDailyVolumeQuantity": 7926591,
+              "issueName": "JPMorgan Chase & Co.",
+              "currentShortPositionQuantity": 27009989,
+              "changePreviousNumber": -3529519,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "JPM",
+              "daysToCoverQuantity": 3.41,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -11.56
+            }
+          },
+          {
+            "symbol": "XOM",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 45134335,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 43639864,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 43639864,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 45134335,
+              "averageDailyVolumeQuantity": 15528389,
+              "issueName": "Exxon Mobil Corporation",
+              "currentShortPositionQuantity": 43639864,
+              "changePreviousNumber": -1494471,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "XOM",
+              "daysToCoverQuantity": 2.81,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -3.31
+            }
+          },
+          {
+            "symbol": "UNH",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 11113473,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 10840729,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 10840729,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 11113473,
+              "averageDailyVolumeQuantity": 33347669,
+              "issueName": "UNITEDHEALTH GROUP INCORPORATE",
+              "currentShortPositionQuantity": 10840729,
+              "changePreviousNumber": -272744,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "UNH",
+              "daysToCoverQuantity": 1,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -2.45
+            }
+          },
+          {
+            "symbol": "PG",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 19616617,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 17629278,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 17629278,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 19616617,
+              "averageDailyVolumeQuantity": 7305698,
+              "issueName": "Procter & Gamble Company",
+              "currentShortPositionQuantity": 17629278,
+              "changePreviousNumber": -1987339,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "PG",
+              "daysToCoverQuantity": 2.41,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -10.13
+            }
+          },
+          {
+            "symbol": "TSLA",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 85015009,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 76998079,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 76998079,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 85015009,
+              "averageDailyVolumeQuantity": 102126773,
+              "issueName": "Tesla, Inc. Common Stock",
+              "currentShortPositionQuantity": 76998079,
+              "changePreviousNumber": -8016930,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NNM",
+              "symbolCode": "TSLA",
+              "daysToCoverQuantity": 1,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": -9.43
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-05-31",
+          "best_symbol": "TSLA",
+          "best_quantity": 85015009,
+          "results": [
+            {
+              "symbol": "JPM",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 30539508,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 27009989,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 27009989,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 30539508,
+                "averageDailyVolumeQuantity": 7926591,
+                "issueName": "JPMorgan Chase & Co.",
+                "currentShortPositionQuantity": 27009989,
+                "changePreviousNumber": -3529519,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "JPM",
+                "daysToCoverQuantity": 3.41,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -11.56
+              }
+            },
+            {
+              "symbol": "XOM",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 45134335,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 43639864,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 43639864,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 45134335,
+                "averageDailyVolumeQuantity": 15528389,
+                "issueName": "Exxon Mobil Corporation",
+                "currentShortPositionQuantity": 43639864,
+                "changePreviousNumber": -1494471,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "XOM",
+                "daysToCoverQuantity": 2.81,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -3.31
+              }
+            },
+            {
+              "symbol": "UNH",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 11113473,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 10840729,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 10840729,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 11113473,
+                "averageDailyVolumeQuantity": 33347669,
+                "issueName": "UNITEDHEALTH GROUP INCORPORATE",
+                "currentShortPositionQuantity": 10840729,
+                "changePreviousNumber": -272744,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "UNH",
+                "daysToCoverQuantity": 1,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -2.45
+              }
+            },
+            {
+              "symbol": "PG",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 19616617,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 17629278,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 17629278,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 19616617,
+                "averageDailyVolumeQuantity": 7305698,
+                "issueName": "Procter & Gamble Company",
+                "currentShortPositionQuantity": 17629278,
+                "changePreviousNumber": -1987339,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "PG",
+                "daysToCoverQuantity": 2.41,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -10.13
+              }
+            },
+            {
+              "symbol": "TSLA",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 85015009,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 76998079,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 76998079,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 85015009,
+                "averageDailyVolumeQuantity": 102126773,
+                "issueName": "Tesla, Inc. Common Stock",
+                "currentShortPositionQuantity": 76998079,
+                "changePreviousNumber": -8016930,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NNM",
+                "symbolCode": "TSLA",
+                "daysToCoverQuantity": 1,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": -9.43
+              }
+            }
+          ],
+          "errors": []
+        }
+      }
+    }
+  ],
+  "created_at": "2026-01-15T21:52:40.266006Z",
+  "green_agent_id": "019bab8b-9244-7e73-8dbd-01234484908b",
+  "purple_agent_id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "purple_image": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "config": {
+    "cases": [
+      {
+        "name": "case-1",
+        "settlement_date": "2025-05-15",
+        "symbols": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMZN",
+          "GOOGL"
+        ]
+      },
+      {
+        "name": "case-2",
+        "settlement_date": "2025-05-31",
+        "symbols": [
+          "JPM",
+          "XOM",
+          "UNH",
+          "PG",
+          "TSLA"
+        ]
+      }
+    ]
+  }
+}
