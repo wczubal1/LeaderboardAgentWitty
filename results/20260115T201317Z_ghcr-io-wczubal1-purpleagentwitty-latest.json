@@ -1,0 +1,56 @@
+{
+  "id": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "status": "fail",
+  "passed": 0,
+  "total": 2,
+  "total_duration_seconds": 0.497,
+  "average_duration_seconds": 0.248,
+  "results": [
+    {
+      "name": "case-1",
+      "status": "error",
+      "duration_seconds": 0.158,
+      "details": {
+        "error": "No result artifact found"
+      }
+    },
+    {
+      "name": "case-2",
+      "status": "error",
+      "duration_seconds": 0.037,
+      "details": {
+        "error": "No result artifact found"
+      }
+    }
+  ],
+  "created_at": "2026-01-15T20:13:17.677642Z",
+  "green_agent_id": "019bab8b-9244-7e73-8dbd-01234484908b",
+  "purple_agent_id": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "purple_image": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "config": {
+    "cases": [
+      {
+        "name": "case-1",
+        "settlement_date": "2025-05-15",
+        "symbols": [
+          "AAPL",
+          "MSFT",
+          "NVDA",
+          "AMZN",
+          "GOOGL"
+        ]
+      },
+      {
+        "name": "case-2",
+        "settlement_date": "2025-05-31",
+        "symbols": [
+          "JPM",
+          "XOM",
+          "UNH",
+          "PG",
+          "TSLA"
+        ]
+      }
+    ]
+  }
+}
