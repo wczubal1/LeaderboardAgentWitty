@@ -10,7 +10,7 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENAI_MODEL = "${OPENAI_MODEL}", 
 [config]
 # Seed 321, symbols sampled without replacement from SP500symbols.csv
 cases = [
-  { name = "case-1", settlement_date = "2025-05-15", symbols = ["DVA", "FISV", "BIIB"] },
+  { name = "case-1", settlement_date = "2025-05-15", symbols = ["DVA", "WMT", "BIIB"] },
   { name = "case-2", settlement_date = "2025-05-31", symbols = ["FDS", "LII", "WST", "HAS", "EQT"] },
   { name = "case-3", settlement_date = "2025-06-15", symbols = ["WMB", "PSX", "ZBH", "CPRT", "WRB", "MRK", "HLT", "GM", "RF", "TJX"] }
 ]
