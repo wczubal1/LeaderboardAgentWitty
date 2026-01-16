@@ -1,0 +1,1518 @@
+{
+  "id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "status": "pass",
+  "passed": 3,
+  "total": 3,
+  "total_duration_seconds": 211.253,
+  "average_duration_seconds": 70.418,
+  "results": [
+    {
+      "name": "case-1",
+      "status": "pass",
+      "duration_seconds": 30.685,
+      "details": {
+        "status": "pass",
+        "errors": [],
+        "symbols": [
+          "DVA",
+          "WMT",
+          "BIIB"
+        ],
+        "settlement_date": "2025-05-15",
+        "requested_date_reason": "provided",
+        "best_symbol": "WMT",
+        "best_quantity": 51027916.0,
+        "results": [
+          {
+            "symbol": "DVA",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 5526640,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 3953678,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 5526640,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 4841988,
+              "averageDailyVolumeQuantity": 876518,
+              "issueName": "DaVita Inc.",
+              "currentShortPositionQuantity": 5526640,
+              "changePreviousNumber": 684652,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "DVA",
+              "daysToCoverQuantity": 6.31,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 14.14
+            }
+          },
+          {
+            "symbol": "WMT",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 51027916,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 46588541,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 51027916,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 47850412,
+              "averageDailyVolumeQuantity": 18901294,
+              "issueName": "Walmart Inc.",
+              "currentShortPositionQuantity": 51027916,
+              "changePreviousNumber": 3177504,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WMT",
+              "daysToCoverQuantity": 2.7,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 6.64
+            }
+          },
+          {
+            "symbol": "BIIB",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 3339605,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 3446446,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 3339605,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 3184274,
+              "averageDailyVolumeQuantity": 1732151,
+              "issueName": "Biogen Inc. Common Stock",
+              "currentShortPositionQuantity": 3339605,
+              "changePreviousNumber": 155331,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "BIIB",
+              "daysToCoverQuantity": 1.93,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": 4.88
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-05-15",
+          "best_symbol": "WMT",
+          "best_quantity": 51027916,
+          "results": [
+            {
+              "symbol": "DVA",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 5526640,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 3953678,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 5526640,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 4841988,
+                "averageDailyVolumeQuantity": 876518,
+                "issueName": "DaVita Inc.",
+                "currentShortPositionQuantity": 5526640,
+                "changePreviousNumber": 684652,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "DVA",
+                "daysToCoverQuantity": 6.31,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 14.14
+              }
+            },
+            {
+              "symbol": "WMT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 51027916,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 46588541,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 51027916,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 47850412,
+                "averageDailyVolumeQuantity": 18901294,
+                "issueName": "Walmart Inc.",
+                "currentShortPositionQuantity": 51027916,
+                "changePreviousNumber": 3177504,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WMT",
+                "daysToCoverQuantity": 2.7,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 6.64
+              }
+            },
+            {
+              "symbol": "BIIB",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 3339605,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 3446446,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 3339605,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 3184274,
+                "averageDailyVolumeQuantity": 1732151,
+                "issueName": "Biogen Inc. Common Stock",
+                "currentShortPositionQuantity": 3339605,
+                "changePreviousNumber": 155331,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "BIIB",
+                "daysToCoverQuantity": 1.93,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": 4.88
+              }
+            }
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "case-2",
+      "status": "pass",
+      "duration_seconds": 49.518,
+      "details": {
+        "status": "pass",
+        "errors": [],
+        "symbols": [
+          "FDS",
+          "LII",
+          "WST",
+          "HAS",
+          "EQT"
+        ],
+        "settlement_date": "2025-05-31",
+        "requested_date_reason": "provided",
+        "best_symbol": "EQT",
+        "best_quantity": 19251086.0,
+        "results": [
+          {
+            "symbol": "FDS",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 1431328,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 1431328,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 1370226,
+              "averageDailyVolumeQuantity": 309279,
+              "issueName": "Factset Research Systems",
+              "currentShortPositionQuantity": 1431328,
+              "changePreviousNumber": 61102,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "FDS",
+              "daysToCoverQuantity": 4.63,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 4.46
+            }
+          },
+          {
+            "symbol": "LII",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 1604630,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 1604630,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 1586737,
+              "averageDailyVolumeQuantity": 359924,
+              "issueName": "Lennox International Inc.",
+              "currentShortPositionQuantity": 1604630,
+              "changePreviousNumber": 17893,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "LII",
+              "daysToCoverQuantity": 4.46,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 1.13
+            }
+          },
+          {
+            "symbol": "WST",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 2247348,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 2247348,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 2517634,
+              "averageDailyVolumeQuantity": 635634,
+              "issueName": "West Pharmaceutical Services,",
+              "currentShortPositionQuantity": 2247348,
+              "changePreviousNumber": -270286,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WST",
+              "daysToCoverQuantity": 3.54,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -10.74
+            }
+          },
+          {
+            "symbol": "HAS",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 5001608,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 5001608,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 5706605,
+              "averageDailyVolumeQuantity": 2161879,
+              "issueName": "Hasbro, Inc. Common Stock",
+              "currentShortPositionQuantity": 5001608,
+              "changePreviousNumber": -704997,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "HAS",
+              "daysToCoverQuantity": 2.31,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": -12.35
+            }
+          },
+          {
+            "symbol": "EQT",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 19251086,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 19251086,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 16130129,
+              "averageDailyVolumeQuantity": 8184531,
+              "issueName": "EQT CORP",
+              "currentShortPositionQuantity": 19251086,
+              "changePreviousNumber": 3120957,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "EQT",
+              "daysToCoverQuantity": 2.35,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 19.35
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-05-31",
+          "best_symbol": "EQT",
+          "best_quantity": 19251086,
+          "results": [
+            {
+              "symbol": "FDS",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 1431328,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 1431328,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 1370226,
+                "averageDailyVolumeQuantity": 309279,
+                "issueName": "Factset Research Systems",
+                "currentShortPositionQuantity": 1431328,
+                "changePreviousNumber": 61102,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "FDS",
+                "daysToCoverQuantity": 4.63,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 4.46
+              }
+            },
+            {
+              "symbol": "LII",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 1604630,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 1604630,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 1586737,
+                "averageDailyVolumeQuantity": 359924,
+                "issueName": "Lennox International Inc.",
+                "currentShortPositionQuantity": 1604630,
+                "changePreviousNumber": 17893,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "LII",
+                "daysToCoverQuantity": 4.46,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 1.13
+              }
+            },
+            {
+              "symbol": "WST",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 2247348,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 2247348,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 2517634,
+                "averageDailyVolumeQuantity": 635634,
+                "issueName": "West Pharmaceutical Services,",
+                "currentShortPositionQuantity": 2247348,
+                "changePreviousNumber": -270286,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WST",
+                "daysToCoverQuantity": 3.54,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -10.74
+              }
+            },
+            {
+              "symbol": "HAS",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 5001608,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 5001608,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 5706605,
+                "averageDailyVolumeQuantity": 2161879,
+                "issueName": "Hasbro, Inc. Common Stock",
+                "currentShortPositionQuantity": 5001608,
+                "changePreviousNumber": -704997,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "HAS",
+                "daysToCoverQuantity": 2.31,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": -12.35
+              }
+            },
+            {
+              "symbol": "EQT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 19251086,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 19251086,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 16130129,
+                "averageDailyVolumeQuantity": 8184531,
+                "issueName": "EQT CORP",
+                "currentShortPositionQuantity": 19251086,
+                "changePreviousNumber": 3120957,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "EQT",
+                "daysToCoverQuantity": 2.35,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 19.35
+              }
+            }
+          ],
+          "errors": []
+        }
+      }
+    },
+    {
+      "name": "case-3",
+      "status": "pass",
+      "duration_seconds": 130.711,
+      "details": {
+        "status": "pass",
+        "errors": [],
+        "symbols": [
+          "WMB",
+          "PSX",
+          "ZBH",
+          "CPRT",
+          "WRB",
+          "MRK",
+          "HLT",
+          "GM",
+          "RF",
+          "TJX"
+        ],
+        "settlement_date": "2025-06-15",
+        "requested_date_reason": "provided",
+        "best_symbol": "RF",
+        "best_quantity": 51105541.0,
+        "results": [
+          {
+            "symbol": "WMB",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 16983240,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 16983240,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 19272834,
+              "averageDailyVolumeQuantity": 7586199,
+              "issueName": "Williams Companies Inc.",
+              "currentShortPositionQuantity": 16983240,
+              "changePreviousNumber": -2289594,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WMB",
+              "daysToCoverQuantity": 2.24,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -11.88
+            }
+          },
+          {
+            "symbol": "PSX",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 6760455,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 6760455,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 8692105,
+              "averageDailyVolumeQuantity": 3490273,
+              "issueName": "PHILLIPS 66",
+              "currentShortPositionQuantity": 6760455,
+              "changePreviousNumber": -1931650,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "PSX",
+              "daysToCoverQuantity": 1.94,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -22.22
+            }
+          },
+          {
+            "symbol": "ZBH",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 5510352,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 5510352,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 5954526,
+              "averageDailyVolumeQuantity": 2656958,
+              "issueName": "Zimmer Biomet Holdings, Inc.",
+              "currentShortPositionQuantity": 5510352,
+              "changePreviousNumber": -444174,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "ZBH",
+              "daysToCoverQuantity": 2.07,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -7.46
+            }
+          },
+          {
+            "symbol": "CPRT",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 17789043,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 17789043,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 19696822,
+              "averageDailyVolumeQuantity": 9709026,
+              "issueName": "Copart, Inc. (DE) Common Stock",
+              "currentShortPositionQuantity": 17789043,
+              "changePreviousNumber": -1907779,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NNM",
+              "symbolCode": "CPRT",
+              "daysToCoverQuantity": 1.83,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": -9.69
+            }
+          },
+          {
+            "symbol": "WRB",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 3878979,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 3878979,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 4107572,
+              "averageDailyVolumeQuantity": 1479233,
+              "issueName": "W.R. Berkley Corporation",
+              "currentShortPositionQuantity": 3878979,
+              "changePreviousNumber": -228593,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WRB",
+              "daysToCoverQuantity": 2.62,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -5.57
+            }
+          },
+          {
+            "symbol": "MRK",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 34564617,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 34564617,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 41266612,
+              "averageDailyVolumeQuantity": 13015493,
+              "issueName": "Merck & Co., Inc.",
+              "currentShortPositionQuantity": 34564617,
+              "changePreviousNumber": -6701995,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "MRK",
+              "daysToCoverQuantity": 2.66,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -16.24
+            }
+          },
+          {
+            "symbol": "HLT",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 6055678,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 6055678,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 5680532,
+              "averageDailyVolumeQuantity": 1648213,
+              "issueName": "Hilton Worldwide Holdings Inc.",
+              "currentShortPositionQuantity": 6055678,
+              "changePreviousNumber": 375146,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "HLT",
+              "daysToCoverQuantity": 3.67,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 6.6
+            }
+          },
+          {
+            "symbol": "GM",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 21017869,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 21017869,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 24062527,
+              "averageDailyVolumeQuantity": 8505755,
+              "issueName": "General Motors Company",
+              "currentShortPositionQuantity": 21017869,
+              "changePreviousNumber": -3044658,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "GM",
+              "daysToCoverQuantity": 2.47,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -12.65
+            }
+          },
+          {
+            "symbol": "RF",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 51105541,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 51105541,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 51792326,
+              "averageDailyVolumeQuantity": 6579986,
+              "issueName": "Regions Financial Corp.",
+              "currentShortPositionQuantity": 51105541,
+              "changePreviousNumber": -686785,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "RF",
+              "daysToCoverQuantity": 7.77,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -1.33
+            }
+          },
+          {
+            "symbol": "TJX",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-14",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-30",
+                "quantity": 12974546,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-30",
+            "currentShortPositionQuantity": 12974546,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 14316663,
+              "averageDailyVolumeQuantity": 7052784,
+              "issueName": "TJX Companies, Inc. (The)",
+              "currentShortPositionQuantity": 12974546,
+              "changePreviousNumber": -1342117,
+              "accountingYearMonthNumber": 20250530,
+              "settlementDate": "2025-05-30",
+              "marketClassCode": "NYSE",
+              "symbolCode": "TJX",
+              "daysToCoverQuantity": 1.84,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -9.37
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-06-15",
+          "best_symbol": "RF",
+          "best_quantity": 51105541,
+          "results": [
+            {
+              "symbol": "WMB",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 16983240,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 16983240,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 19272834,
+                "averageDailyVolumeQuantity": 7586199,
+                "issueName": "Williams Companies Inc.",
+                "currentShortPositionQuantity": 16983240,
+                "changePreviousNumber": -2289594,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WMB",
+                "daysToCoverQuantity": 2.24,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -11.88
+              }
+            },
+            {
+              "symbol": "PSX",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 6760455,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 6760455,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 8692105,
+                "averageDailyVolumeQuantity": 3490273,
+                "issueName": "PHILLIPS 66",
+                "currentShortPositionQuantity": 6760455,
+                "changePreviousNumber": -1931650,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "PSX",
+                "daysToCoverQuantity": 1.94,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -22.22
+              }
+            },
+            {
+              "symbol": "ZBH",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 5510352,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 5510352,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 5954526,
+                "averageDailyVolumeQuantity": 2656958,
+                "issueName": "Zimmer Biomet Holdings, Inc.",
+                "currentShortPositionQuantity": 5510352,
+                "changePreviousNumber": -444174,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "ZBH",
+                "daysToCoverQuantity": 2.07,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -7.46
+              }
+            },
+            {
+              "symbol": "CPRT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 17789043,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 17789043,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 19696822,
+                "averageDailyVolumeQuantity": 9709026,
+                "issueName": "Copart, Inc. (DE) Common Stock",
+                "currentShortPositionQuantity": 17789043,
+                "changePreviousNumber": -1907779,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NNM",
+                "symbolCode": "CPRT",
+                "daysToCoverQuantity": 1.83,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": -9.69
+              }
+            },
+            {
+              "symbol": "WRB",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 3878979,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 3878979,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 4107572,
+                "averageDailyVolumeQuantity": 1479233,
+                "issueName": "W.R. Berkley Corporation",
+                "currentShortPositionQuantity": 3878979,
+                "changePreviousNumber": -228593,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WRB",
+                "daysToCoverQuantity": 2.62,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -5.57
+              }
+            },
+            {
+              "symbol": "MRK",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 34564617,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 34564617,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 41266612,
+                "averageDailyVolumeQuantity": 13015493,
+                "issueName": "Merck & Co., Inc.",
+                "currentShortPositionQuantity": 34564617,
+                "changePreviousNumber": -6701995,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "MRK",
+                "daysToCoverQuantity": 2.66,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -16.24
+              }
+            },
+            {
+              "symbol": "HLT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 6055678,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 6055678,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 5680532,
+                "averageDailyVolumeQuantity": 1648213,
+                "issueName": "Hilton Worldwide Holdings Inc.",
+                "currentShortPositionQuantity": 6055678,
+                "changePreviousNumber": 375146,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "HLT",
+                "daysToCoverQuantity": 3.67,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 6.6
+              }
+            },
+            {
+              "symbol": "GM",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 21017869,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 21017869,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 24062527,
+                "averageDailyVolumeQuantity": 8505755,
+                "issueName": "General Motors Company",
+                "currentShortPositionQuantity": 21017869,
+                "changePreviousNumber": -3044658,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "GM",
+                "daysToCoverQuantity": 2.47,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -12.65
+              }
+            },
+            {
+              "symbol": "RF",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 51105541,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 51105541,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 51792326,
+                "averageDailyVolumeQuantity": 6579986,
+                "issueName": "Regions Financial Corp.",
+                "currentShortPositionQuantity": 51105541,
+                "changePreviousNumber": -686785,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "RF",
+                "daysToCoverQuantity": 7.77,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -1.33
+              }
+            },
+            {
+              "symbol": "TJX",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-14",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-30",
+                  "quantity": 12974546,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-30",
+              "currentShortPositionQuantity": 12974546,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 14316663,
+                "averageDailyVolumeQuantity": 7052784,
+                "issueName": "TJX Companies, Inc. (The)",
+                "currentShortPositionQuantity": 12974546,
+                "changePreviousNumber": -1342117,
+                "accountingYearMonthNumber": 20250530,
+                "settlementDate": "2025-05-30",
+                "marketClassCode": "NYSE",
+                "symbolCode": "TJX",
+                "daysToCoverQuantity": 1.84,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -9.37
+              }
+            }
+          ],
+          "errors": []
+        }
+      }
+    }
+  ],
+  "created_at": "2026-01-16T03:28:37.590666Z",
+  "green_agent_id": "019bab8b-9244-7e73-8dbd-01234484908b",
+  "purple_agent_id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "purple_image": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "config": {
+    "cases": [
+      {
+        "name": "case-1",
+        "settlement_date": "2025-05-15",
+        "symbols": [
+          "DVA",
+          "WMT",
+          "BIIB"
+        ]
+      },
+      {
+        "name": "case-2",
+        "settlement_date": "2025-05-31",
+        "symbols": [
+          "FDS",
+          "LII",
+          "WST",
+          "HAS",
+          "EQT"
+        ]
+      },
+      {
+        "name": "case-3",
+        "settlement_date": "2025-06-15",
+        "symbols": [
+          "WMB",
+          "PSX",
+          "ZBH",
+          "CPRT",
+          "WRB",
+          "MRK",
+          "HLT",
+          "GM",
+          "RF",
+          "TJX"
+        ]
+      }
+    ]
+  }
+}
