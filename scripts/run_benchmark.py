@@ -264,7 +264,7 @@ def main() -> None:
     parser.add_argument("--purple-image", default=DEFAULT_PURPLE_IMAGE)
     parser.add_argument("--cases", default=str(DEFAULT_CASES_PATH))
     parser.add_argument("--scenario", default=str(Path(__file__).resolve().parents[1] / "scenario.toml"))
-    parser.add_argument("--http-timeout", type=int, default=180)
+    parser.add_argument("--http-timeout", type=int, default=900)
     parser.add_argument(
         "--use-mcp",
         action="store_true",
