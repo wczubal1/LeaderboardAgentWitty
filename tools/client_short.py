@@ -1,4 +1,4 @@
-"""Query FINRA consolidated short interest data via the Query API."""
+"""Query FINRA datasets via the Query API (short interest or weekly summary)."""
 
 from __future__ import annotations
 
@@ -10,14 +10,17 @@ from typing import Any, Dict, List, Optional, Tuple
 
 from client import FinraQueryClient, FinraQueryError, _parse_query_params
 
-DATASET_GROUP = "otcmarket"
-DATASET_NAME = "consolidatedShortInterest"
+DEFAULT_DATASET_GROUP = "otcmarket"
+DEFAULT_DATASET_NAME = "consolidatedShortInterest"
 RESERVED_QUERY_KEYS = {"fields", "limit", "offset", "sortFields"}
 
 
 def _build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Fetch consolidated short interest data from the FINRA Query API.",
+        description=(
+            "Fetch FINRA Query API data. Defaults to consolidatedShortInterest; "
+            "set --dataset-name weeklySummary for OTC weekly summary."
+        ),
     )
     parser.add_argument(
         "--finra-client-id",
@@ -32,6 +35,16 @@ def _build_arg_parser() -> argparse.ArgumentParser:
         type=int,
         default=30,
         help="HTTP timeout for FINRA requests.",
+    )
+    parser.add_argument(
+        "--dataset-group",
+        default=DEFAULT_DATASET_GROUP,
+        help="Dataset group (default: otcmarket).",
+    )
+    parser.add_argument(
+        "--dataset-name",
+        default=DEFAULT_DATASET_NAME,
+        help="Dataset name (default: consolidatedShortInterest).",
     )
     parser.add_argument(
         "--fields",
@@ -60,12 +73,36 @@ def _build_arg_parser() -> argparse.ArgumentParser:
         help="Filter by symbolCode.",
     )
     parser.add_argument(
+        "--issue-symbol",
+        help="Filter by issueSymbolIdentifier (weeklySummary).",
+    )
+    parser.add_argument(
         "--issue-name",
         help="Filter by issueName (company name).",
     )
     parser.add_argument(
         "--settlement-date",
         help="Filter by settlementDate (YYYY-MM-DD).",
+    )
+    parser.add_argument(
+        "--week-start-date",
+        help="Filter by weekStartDate (YYYY-MM-DD, weeklySummary).",
+    )
+    parser.add_argument(
+        "--summary-start-date",
+        help="Filter by summaryStartDate (YYYY-MM-DD, weeklySummary).",
+    )
+    parser.add_argument(
+        "--tier-identifier",
+        help="Filter by tierIdentifier (weeklySummary).",
+    )
+    parser.add_argument(
+        "--summary-type-code",
+        help="Filter by summaryTypeCode (weeklySummary).",
+    )
+    parser.add_argument(
+        "--mpid",
+        help="Filter by MPID (weeklySummary).",
     )
     return parser
 
@@ -91,7 +128,7 @@ def _build_filters(
             if key in RESERVED_QUERY_KEYS:
                 extra_params[key] = value
                 continue
-            if key == "settlementDate":
+            if key in {"settlementDate", "weekStartDate", "summaryStartDate"}:
                 date_range_filters.append(
                     {"fieldName": key, "startDate": value, "endDate": value}
                 )
@@ -104,6 +141,8 @@ def _build_filters(
 
     if args.symbol:
         compare_filters.append(_compare_filter("symbolCode", args.symbol))
+    if args.issue_symbol:
+        compare_filters.append(_compare_filter("issueSymbolIdentifier", args.issue_symbol))
     if args.issue_name:
         compare_filters.append(_compare_filter("issueName", args.issue_name))
     if args.settlement_date:
@@ -114,6 +153,28 @@ def _build_filters(
                 "endDate": args.settlement_date,
             }
         )
+    if args.week_start_date:
+        date_range_filters.append(
+            {
+                "fieldName": "weekStartDate",
+                "startDate": args.week_start_date,
+                "endDate": args.week_start_date,
+            }
+        )
+    if args.summary_start_date:
+        date_range_filters.append(
+            {
+                "fieldName": "summaryStartDate",
+                "startDate": args.summary_start_date,
+                "endDate": args.summary_start_date,
+            }
+        )
+    if args.tier_identifier:
+        compare_filters.append(_compare_filter("tierIdentifier", args.tier_identifier))
+    if args.summary_type_code:
+        compare_filters.append(_compare_filter("summaryTypeCode", args.summary_type_code))
+    if args.mpid:
+        compare_filters.append(_compare_filter("MPID", args.mpid))
 
     return compare_filters, date_range_filters, extra_params
 
@@ -164,8 +225,8 @@ def main(argv: Optional[List[str]] = None) -> int:
         with FinraQueryClient(
             client_id=client_id,
             client_secret=client_secret,
-            dataset_group=DATASET_GROUP,
-            dataset_name=DATASET_NAME,
+            dataset_group=args.dataset_group,
+            dataset_name=args.dataset_name,
             timeout=args.timeout,
         ) as query_client:
             payload = query_client.query_dataset_post(
