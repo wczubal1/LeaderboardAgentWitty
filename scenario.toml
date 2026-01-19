@@ -10,7 +10,10 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENAI_MODEL = "${OPENAI_MODEL}", 
 [config]
 # Seed 321, symbols sampled without replacement from SP500symbols.csv
 cases = [
-  { name = "case-1", settlement_date = "2025-05-15", symbols = ["DVA", "WMT", "BIIB"] },
-  { name = "case-2", settlement_date = "2025-05-31", symbols = ["FDS", "LII", "WST", "HAS", "EQT"] },
-  { name = "case-3", settlement_date = "2025-06-15", symbols = ["WMB", "PSX", "ZBH", "CPRT", "WRB", "MRK", "HLT", "GM", "RF", "TJX"] }
+  { name = "case-1", settlement_date = "2025-05-15", symbols = ["DVA", "WMT", "BIIB"], question = "For the given symbols and settlement date, find short interest.", dataset_name_eval = "consolidatedShortInterest" },
+  { name = "case-2", settlement_date = "2025-05-31", symbols = ["FDS", "LII", "WST", "HAS", "EQT"], question = "For the given symbols and settlement date, find short interest.", dataset_name_eval = "consolidatedShortInterest" },
+  { name = "case-3", settlement_date = "2025-06-15", symbols = ["WMB", "PSX", "ZBH", "CPRT", "WRB", "MRK", "HLT", "GM", "RF", "TJX"], question = "For the given symbols and settlement date, find short interest.", dataset_name_eval = "consolidatedShortInterest" },
+  { name = "case-4", settlement_date = "2025-06-30", symbols = ["MMM", "AOS", "ABT"], question = "Find weekly total number of shares reported for the symbol and date.", dataset_name_eval = "weeklySummary" },
+  { name = "case-5", settlement_date = "2025-07-15", symbols = ["ABBV", "ACN", "ADBE", "AMD", "AES"], question = "Find weekly total number of shares reported for the symbol and date.", dataset_name_eval = "weeklySummary" },
+  { name = "case-6", settlement_date = "2025-07-31", symbols = ["AFL", "A", "APD", "ABNB", "AKAM", "ALB", "ARE", "ALGN", "ALLE", "LNT"], question = "Find weekly total number of shares reported for the symbol and date.", dataset_name_eval = "weeklySummary" }
 ]
