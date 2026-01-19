@@ -56,10 +56,13 @@ python scripts/run_benchmark.py \
 Results are written to the `results/` directory in this repo, and the
 leaderboard refresh reads those JSON files.
 
-- `tools/client_short.py` and `tools/client.py` are copied from the brokercheck project.
+- `tools/client_short.py` and `tools/client.py` live in this repo and are mounted
+  into the purple container so any purple agent can use them without extra setup.
 - The benchmark mounts those tools to
   `/home/wczubal1/projects/tau2/brokercheck/client_short.py` inside the purple
   container to match the green agent's default path.
+- `client_short.py` supports `consolidatedShortInterest` and `weeklySummary`
+  datasets (used by short-interest vs weekly-share questions).
 - `client.py` depends on the `requests` package; ensure the purple image has it.
 
 ## Leaderboard Queries (Optional)
@@ -82,4 +85,3 @@ Example query showing latency:
 The AgentBeats scenario definition lives in `scenario.toml`. Submitters fill in the
 purple agent ID and secrets, while the green agent ID and default test cases are
 pre-filled.
-
