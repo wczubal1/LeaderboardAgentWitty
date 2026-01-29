@@ -1,0 +1,2111 @@
+{
+  "id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "status": "fail",
+  "passed": 3,
+  "total": 8,
+  "total_duration_seconds": 649.171,
+  "average_duration_seconds": 81.146,
+  "results": [
+    {
+      "name": "case-1",
+      "status": "pass",
+      "duration_seconds": 31.558,
+      "details": {
+        "status": "pass",
+        "errors": [],
+        "symbols": [
+          "DVA",
+          "WMT",
+          "BIIB"
+        ],
+        "settlement_date": "2025-05-15",
+        "requested_date_reason": "provided",
+        "best_symbol": "WMT",
+        "best_quantity": 51027916.0,
+        "results": [
+          {
+            "symbol": "DVA",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 5526640,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 3953678,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 5526640,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 4841988,
+              "averageDailyVolumeQuantity": 876518,
+              "issueName": "DaVita Inc.",
+              "currentShortPositionQuantity": 5526640,
+              "changePreviousNumber": 684652,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "DVA",
+              "daysToCoverQuantity": 6.31,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 14.14
+            }
+          },
+          {
+            "symbol": "WMT",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 51027916,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 46588541,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 51027916,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 47850412,
+              "averageDailyVolumeQuantity": 18901294,
+              "issueName": "Walmart Inc.",
+              "currentShortPositionQuantity": 51027916,
+              "changePreviousNumber": 3177504,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WMT",
+              "daysToCoverQuantity": 2.7,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 6.64
+            }
+          },
+          {
+            "symbol": "BIIB",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 3339605,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-01",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-04-15",
+                "quantity": 3446446,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 3339605,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 3184274,
+              "averageDailyVolumeQuantity": 1732151,
+              "issueName": "Biogen Inc. Common Stock",
+              "currentShortPositionQuantity": 3339605,
+              "changePreviousNumber": 155331,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "BIIB",
+              "daysToCoverQuantity": 1.93,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": 4.88
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-05-15",
+          "dataset_name": "consolidatedShortInterest",
+          "best_symbol": "WMT",
+          "best_quantity": 51027916,
+          "results": [
+            {
+              "symbol": "DVA",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 5526640,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 3953678,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 5526640,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 4841988,
+                "averageDailyVolumeQuantity": 876518,
+                "issueName": "DaVita Inc.",
+                "currentShortPositionQuantity": 5526640,
+                "changePreviousNumber": 684652,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "DVA",
+                "daysToCoverQuantity": 6.31,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 14.14
+              }
+            },
+            {
+              "symbol": "WMT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 51027916,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 46588541,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 51027916,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 47850412,
+                "averageDailyVolumeQuantity": 18901294,
+                "issueName": "Walmart Inc.",
+                "currentShortPositionQuantity": 51027916,
+                "changePreviousNumber": 3177504,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WMT",
+                "daysToCoverQuantity": 2.7,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 6.64
+              }
+            },
+            {
+              "symbol": "BIIB",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 3339605,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-01",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-04-15",
+                  "quantity": 3446446,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 3339605,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 3184274,
+                "averageDailyVolumeQuantity": 1732151,
+                "issueName": "Biogen Inc. Common Stock",
+                "currentShortPositionQuantity": 3339605,
+                "changePreviousNumber": 155331,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "BIIB",
+                "daysToCoverQuantity": 1.93,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": 4.88
+              }
+            }
+          ],
+          "errors": [],
+          "dataset_group": "otcmarket"
+        }
+      }
+    },
+    {
+      "name": "case-2",
+      "status": "pass",
+      "duration_seconds": 61.476,
+      "details": {
+        "status": "pass",
+        "errors": [],
+        "symbols": [
+          "FDS",
+          "LII",
+          "WST",
+          "HAS",
+          "EQT"
+        ],
+        "settlement_date": "2025-05-31",
+        "requested_date_reason": "provided",
+        "best_symbol": "EQT",
+        "best_quantity": 19251086.0,
+        "results": [
+          {
+            "symbol": "FDS",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 1431328,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 1431328,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 1370226,
+              "averageDailyVolumeQuantity": 309279,
+              "issueName": "Factset Research Systems",
+              "currentShortPositionQuantity": 1431328,
+              "changePreviousNumber": 61102,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "FDS",
+              "daysToCoverQuantity": 4.63,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 4.46
+            }
+          },
+          {
+            "symbol": "LII",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 1604630,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 1604630,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 1586737,
+              "averageDailyVolumeQuantity": 359924,
+              "issueName": "Lennox International Inc.",
+              "currentShortPositionQuantity": 1604630,
+              "changePreviousNumber": 17893,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "LII",
+              "daysToCoverQuantity": 4.46,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 1.13
+            }
+          },
+          {
+            "symbol": "WST",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 2247348,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 2247348,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 2517634,
+              "averageDailyVolumeQuantity": 635634,
+              "issueName": "West Pharmaceutical Services,",
+              "currentShortPositionQuantity": 2247348,
+              "changePreviousNumber": -270286,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WST",
+              "daysToCoverQuantity": 3.54,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -10.74
+            }
+          },
+          {
+            "symbol": "HAS",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 5001608,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 5001608,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 5706605,
+              "averageDailyVolumeQuantity": 2161879,
+              "issueName": "Hasbro, Inc. Common Stock",
+              "currentShortPositionQuantity": 5001608,
+              "changePreviousNumber": -704997,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "HAS",
+              "daysToCoverQuantity": 2.31,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": -12.35
+            }
+          },
+          {
+            "symbol": "EQT",
+            "attempts": [
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 19251086,
+                "error": null
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 19251086,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 16130129,
+              "averageDailyVolumeQuantity": 8184531,
+              "issueName": "EQT CORP",
+              "currentShortPositionQuantity": 19251086,
+              "changePreviousNumber": 3120957,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "EQT",
+              "daysToCoverQuantity": 2.35,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 19.35
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-05-31",
+          "dataset_name": "consolidatedShortInterest",
+          "best_symbol": "EQT",
+          "best_quantity": 19251086,
+          "results": [
+            {
+              "symbol": "FDS",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 1431328,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 1431328,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 1370226,
+                "averageDailyVolumeQuantity": 309279,
+                "issueName": "Factset Research Systems",
+                "currentShortPositionQuantity": 1431328,
+                "changePreviousNumber": 61102,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "FDS",
+                "daysToCoverQuantity": 4.63,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 4.46
+              }
+            },
+            {
+              "symbol": "LII",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 1604630,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 1604630,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 1586737,
+                "averageDailyVolumeQuantity": 359924,
+                "issueName": "Lennox International Inc.",
+                "currentShortPositionQuantity": 1604630,
+                "changePreviousNumber": 17893,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "LII",
+                "daysToCoverQuantity": 4.46,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 1.13
+              }
+            },
+            {
+              "symbol": "WST",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 2247348,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 2247348,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 2517634,
+                "averageDailyVolumeQuantity": 635634,
+                "issueName": "West Pharmaceutical Services,",
+                "currentShortPositionQuantity": 2247348,
+                "changePreviousNumber": -270286,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WST",
+                "daysToCoverQuantity": 3.54,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -10.74
+              }
+            },
+            {
+              "symbol": "HAS",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 5001608,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 5001608,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 5706605,
+                "averageDailyVolumeQuantity": 2161879,
+                "issueName": "Hasbro, Inc. Common Stock",
+                "currentShortPositionQuantity": 5001608,
+                "changePreviousNumber": -704997,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "HAS",
+                "daysToCoverQuantity": 2.31,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": -12.35
+              }
+            },
+            {
+              "symbol": "EQT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 19251086,
+                  "error": null
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 19251086,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 16130129,
+                "averageDailyVolumeQuantity": 8184531,
+                "issueName": "EQT CORP",
+                "currentShortPositionQuantity": 19251086,
+                "changePreviousNumber": 3120957,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "EQT",
+                "daysToCoverQuantity": 2.35,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 19.35
+              }
+            }
+          ],
+          "errors": [],
+          "dataset_group": "otcmarket"
+        }
+      }
+    },
+    {
+      "name": "case-3",
+      "status": "pass",
+      "duration_seconds": 112.028,
+      "details": {
+        "status": "pass",
+        "errors": [],
+        "symbols": [
+          "WMB",
+          "PSX",
+          "ZBH",
+          "CPRT",
+          "WRB",
+          "MRK",
+          "HLT",
+          "GM",
+          "RF",
+          "TJX"
+        ],
+        "settlement_date": "2025-06-15",
+        "requested_date_reason": "provided",
+        "best_symbol": "RF",
+        "best_quantity": 51792326.0,
+        "results": [
+          {
+            "symbol": "WMB",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 19272834,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 19272834,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 19625011,
+              "averageDailyVolumeQuantity": 6827623,
+              "issueName": "Williams Companies Inc.",
+              "currentShortPositionQuantity": 19272834,
+              "changePreviousNumber": -352177,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WMB",
+              "daysToCoverQuantity": 2.82,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -1.79
+            }
+          },
+          {
+            "symbol": "PSX",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 8692105,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 8692105,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 13710383,
+              "averageDailyVolumeQuantity": 3483361,
+              "issueName": "PHILLIPS 66",
+              "currentShortPositionQuantity": 8692105,
+              "changePreviousNumber": -5018278,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "PSX",
+              "daysToCoverQuantity": 2.5,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -36.6
+            }
+          },
+          {
+            "symbol": "ZBH",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 5954526,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 5954526,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 6268513,
+              "averageDailyVolumeQuantity": 3316217,
+              "issueName": "Zimmer Biomet Holdings, Inc.",
+              "currentShortPositionQuantity": 5954526,
+              "changePreviousNumber": -313987,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "ZBH",
+              "daysToCoverQuantity": 1.8,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -5.01
+            }
+          },
+          {
+            "symbol": "CPRT",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 19696822,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 19696822,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 17539798,
+              "averageDailyVolumeQuantity": 3551594,
+              "issueName": "Copart, Inc. (DE) Common Stock",
+              "currentShortPositionQuantity": 19696822,
+              "changePreviousNumber": 2157024,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NNM",
+              "symbolCode": "CPRT",
+              "daysToCoverQuantity": 5.55,
+              "issuerServicesGroupExchangeCode": "R",
+              "revisionFlag": null,
+              "changePercent": 12.3
+            }
+          },
+          {
+            "symbol": "WRB",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 4107572,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 4107572,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 3802229,
+              "averageDailyVolumeQuantity": 1437281,
+              "issueName": "W.R. Berkley Corporation",
+              "currentShortPositionQuantity": 4107572,
+              "changePreviousNumber": 305343,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "WRB",
+              "daysToCoverQuantity": 2.86,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 8.03
+            }
+          },
+          {
+            "symbol": "MRK",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 41266612,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 41266612,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 37137335,
+              "averageDailyVolumeQuantity": 15862063,
+              "issueName": "Merck & Co., Inc.",
+              "currentShortPositionQuantity": 41266612,
+              "changePreviousNumber": 4129277,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "MRK",
+              "daysToCoverQuantity": 2.6,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 11.12
+            }
+          },
+          {
+            "symbol": "HLT",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 5680532,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 5680532,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 5817487,
+              "averageDailyVolumeQuantity": 2189854,
+              "issueName": "Hilton Worldwide Holdings Inc.",
+              "currentShortPositionQuantity": 5680532,
+              "changePreviousNumber": -136955,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "HLT",
+              "daysToCoverQuantity": 2.59,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -2.35
+            }
+          },
+          {
+            "symbol": "GM",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 24062527,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 24062527,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 22410862,
+              "averageDailyVolumeQuantity": 10624192,
+              "issueName": "General Motors Company",
+              "currentShortPositionQuantity": 24062527,
+              "changePreviousNumber": 1651665,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "GM",
+              "daysToCoverQuantity": 2.26,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 7.37
+            }
+          },
+          {
+            "symbol": "RF",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 51792326,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 51792326,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 51146530,
+              "averageDailyVolumeQuantity": 6670189,
+              "issueName": "Regions Financial Corp.",
+              "currentShortPositionQuantity": 51792326,
+              "changePreviousNumber": 645796,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "RF",
+              "daysToCoverQuantity": 7.76,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": 1.26
+            }
+          },
+          {
+            "symbol": "TJX",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-31",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+              },
+              {
+                "settlement_date": "2025-05-15",
+                "quantity": 14316663,
+                "error": null
+              }
+            ],
+            "chosen_date": "2025-05-15",
+            "currentShortPositionQuantity": 14316663,
+            "totalWeeklyShareQuantity": null,
+            "record": {
+              "stockSplitFlag": null,
+              "previousShortPositionQuantity": 14783052,
+              "averageDailyVolumeQuantity": 4825822,
+              "issueName": "TJX Companies, Inc. (The)",
+              "currentShortPositionQuantity": 14316663,
+              "changePreviousNumber": -466389,
+              "accountingYearMonthNumber": 20250515,
+              "settlementDate": "2025-05-15",
+              "marketClassCode": "NYSE",
+              "symbolCode": "TJX",
+              "daysToCoverQuantity": 2.97,
+              "issuerServicesGroupExchangeCode": "A",
+              "revisionFlag": null,
+              "changePercent": -3.15
+            }
+          }
+        ],
+        "purple_response": {
+          "status": "ok",
+          "requested_settlement_date": "2025-06-15",
+          "dataset_name": "consolidatedShortInterest",
+          "best_symbol": "RF",
+          "best_quantity": 51792326,
+          "results": [
+            {
+              "symbol": "WMB",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 19272834,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 19272834,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 19625011,
+                "averageDailyVolumeQuantity": 6827623,
+                "issueName": "Williams Companies Inc.",
+                "currentShortPositionQuantity": 19272834,
+                "changePreviousNumber": -352177,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WMB",
+                "daysToCoverQuantity": 2.82,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -1.79
+              }
+            },
+            {
+              "symbol": "PSX",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 8692105,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 8692105,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 13710383,
+                "averageDailyVolumeQuantity": 3483361,
+                "issueName": "PHILLIPS 66",
+                "currentShortPositionQuantity": 8692105,
+                "changePreviousNumber": -5018278,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "PSX",
+                "daysToCoverQuantity": 2.5,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -36.6
+              }
+            },
+            {
+              "symbol": "ZBH",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 5954526,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 5954526,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 6268513,
+                "averageDailyVolumeQuantity": 3316217,
+                "issueName": "Zimmer Biomet Holdings, Inc.",
+                "currentShortPositionQuantity": 5954526,
+                "changePreviousNumber": -313987,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "ZBH",
+                "daysToCoverQuantity": 1.8,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -5.01
+              }
+            },
+            {
+              "symbol": "CPRT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 19696822,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 19696822,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 17539798,
+                "averageDailyVolumeQuantity": 3551594,
+                "issueName": "Copart, Inc. (DE) Common Stock",
+                "currentShortPositionQuantity": 19696822,
+                "changePreviousNumber": 2157024,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NNM",
+                "symbolCode": "CPRT",
+                "daysToCoverQuantity": 5.55,
+                "issuerServicesGroupExchangeCode": "R",
+                "revisionFlag": null,
+                "changePercent": 12.3
+              }
+            },
+            {
+              "symbol": "WRB",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 4107572,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 4107572,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 3802229,
+                "averageDailyVolumeQuantity": 1437281,
+                "issueName": "W.R. Berkley Corporation",
+                "currentShortPositionQuantity": 4107572,
+                "changePreviousNumber": 305343,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "WRB",
+                "daysToCoverQuantity": 2.86,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 8.03
+              }
+            },
+            {
+              "symbol": "MRK",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 41266612,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 41266612,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 37137335,
+                "averageDailyVolumeQuantity": 15862063,
+                "issueName": "Merck & Co., Inc.",
+                "currentShortPositionQuantity": 41266612,
+                "changePreviousNumber": 4129277,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "MRK",
+                "daysToCoverQuantity": 2.6,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 11.12
+              }
+            },
+            {
+              "symbol": "HLT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 5680532,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 5680532,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 5817487,
+                "averageDailyVolumeQuantity": 2189854,
+                "issueName": "Hilton Worldwide Holdings Inc.",
+                "currentShortPositionQuantity": 5680532,
+                "changePreviousNumber": -136955,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "HLT",
+                "daysToCoverQuantity": 2.59,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -2.35
+              }
+            },
+            {
+              "symbol": "GM",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 24062527,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 24062527,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 22410862,
+                "averageDailyVolumeQuantity": 10624192,
+                "issueName": "General Motors Company",
+                "currentShortPositionQuantity": 24062527,
+                "changePreviousNumber": 1651665,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "GM",
+                "daysToCoverQuantity": 2.26,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 7.37
+              }
+            },
+            {
+              "symbol": "RF",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 51792326,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 51792326,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 51146530,
+                "averageDailyVolumeQuantity": 6670189,
+                "issueName": "Regions Financial Corp.",
+                "currentShortPositionQuantity": 51792326,
+                "changePreviousNumber": 645796,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "RF",
+                "daysToCoverQuantity": 7.76,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": 1.26
+              }
+            },
+            {
+              "symbol": "TJX",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-31",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query returned non-JSON response"
+                },
+                {
+                  "settlement_date": "2025-05-15",
+                  "quantity": 14316663,
+                  "error": null
+                }
+              ],
+              "chosen_date": "2025-05-15",
+              "currentShortPositionQuantity": 14316663,
+              "totalWeeklyShareQuantity": null,
+              "record": {
+                "stockSplitFlag": null,
+                "previousShortPositionQuantity": 14783052,
+                "averageDailyVolumeQuantity": 4825822,
+                "issueName": "TJX Companies, Inc. (The)",
+                "currentShortPositionQuantity": 14316663,
+                "changePreviousNumber": -466389,
+                "accountingYearMonthNumber": 20250515,
+                "settlementDate": "2025-05-15",
+                "marketClassCode": "NYSE",
+                "symbolCode": "TJX",
+                "daysToCoverQuantity": 2.97,
+                "issuerServicesGroupExchangeCode": "A",
+                "revisionFlag": null,
+                "changePercent": -3.15
+              }
+            }
+          ],
+          "errors": [],
+          "dataset_group": "otcmarket"
+        }
+      }
+    },
+    {
+      "name": "case-4",
+      "status": "fail",
+      "duration_seconds": 61.121,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "MMM: no numeric quantity found in attempts.",
+          "AOS: no numeric quantity found in attempts.",
+          "ABT: no numeric quantity found in attempts.",
+          "No numeric weekly share values returned."
+        ],
+        "symbols": [
+          "MMM",
+          "AOS",
+          "ABT"
+        ],
+        "settlement_date": "2025-06-30",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [
+          {
+            "symbol": "MMM",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"d20fc619-9fda-4c4a-af2a-334a1e693101\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"MMM\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-15\",\"startDate\":\"2025-06-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-06-29",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"bbf22cee-4fa1-44cd-9222-7e37f007cd09\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"MMM\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-29\",\"startDate\":\"2025-06-29\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-06-30",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"f4705293-a896-4ba9-b17b-aa2be495a391\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"MMM\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-30\",\"startDate\":\"2025-06-30\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": null,
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "AOS",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"2da6b2fa-3f55-4fe3-b7c0-282dd59c044d\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"AOS\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-15\",\"startDate\":\"2025-06-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-06-29",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"83e685d2-b59e-434c-bf54-2cca741fa952\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"AOS\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-29\",\"startDate\":\"2025-06-29\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-06-30",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"e9101d0b-5e98-439a-a965-b5cdd0e4be6b\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"AOS\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-30\",\"startDate\":\"2025-06-30\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": null,
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "ABT",
+            "attempts": [
+              {
+                "settlement_date": "2025-06-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"814d88d0-d693-46a1-8ba7-4307a4ed1613\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABT\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-15\",\"startDate\":\"2025-06-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-06-29",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"d8c82f75-d0cc-44b8-80a5-e2815d186594\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABT\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-29\",\"startDate\":\"2025-06-29\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-06-30",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"97aac63c-7b73-432e-badd-52d1bad79b16\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABT\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-30\",\"startDate\":\"2025-06-30\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": null,
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          }
+        ],
+        "purple_response": {
+          "status": "error",
+          "requested_settlement_date": "2025-06-30",
+          "dataset_name": "weeklySummary",
+          "best_symbol": null,
+          "best_quantity": null,
+          "results": [
+            {
+              "symbol": "MMM",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"d20fc619-9fda-4c4a-af2a-334a1e693101\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"MMM\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-15\",\"startDate\":\"2025-06-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-06-29",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"bbf22cee-4fa1-44cd-9222-7e37f007cd09\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"MMM\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-29\",\"startDate\":\"2025-06-29\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-06-30",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"f4705293-a896-4ba9-b17b-aa2be495a391\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"MMM\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-30\",\"startDate\":\"2025-06-30\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": null,
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "AOS",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"2da6b2fa-3f55-4fe3-b7c0-282dd59c044d\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"AOS\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-15\",\"startDate\":\"2025-06-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-06-29",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"83e685d2-b59e-434c-bf54-2cca741fa952\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"AOS\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-29\",\"startDate\":\"2025-06-29\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-06-30",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"e9101d0b-5e98-439a-a965-b5cdd0e4be6b\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"AOS\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-30\",\"startDate\":\"2025-06-30\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": null,
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "ABT",
+              "attempts": [
+                {
+                  "settlement_date": "2025-06-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"814d88d0-d693-46a1-8ba7-4307a4ed1613\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABT\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-15\",\"startDate\":\"2025-06-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-06-29",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"d8c82f75-d0cc-44b8-80a5-e2815d186594\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABT\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-29\",\"startDate\":\"2025-06-29\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-06-30",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"97aac63c-7b73-432e-badd-52d1bad79b16\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABT\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-06-30\",\"startDate\":\"2025-06-30\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": null,
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            }
+          ],
+          "errors": [],
+          "dataset_group": "otcmarket"
+        }
+      }
+    },
+    {
+      "name": "case-5",
+      "status": "fail",
+      "duration_seconds": 82.529,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "ABBV: no numeric quantity found in attempts.",
+          "ACN: no numeric quantity found in attempts.",
+          "ADBE: no numeric quantity found in attempts.",
+          "AMD: no numeric quantity found in attempts.",
+          "AES: no numeric quantity found in attempts.",
+          "No numeric weekly share values returned."
+        ],
+        "symbols": [
+          "ABBV",
+          "ACN",
+          "ADBE",
+          "AMD",
+          "AES"
+        ],
+        "settlement_date": "2025-07-15",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [
+          {
+            "symbol": "ABBV",
+            "attempts": [
+              {
+                "settlement_date": "2025-07-05",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"6025aeec-f046-4db0-b004-2f9d1bfad2ab\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABBV\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-12",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"3ff97d0e-d442-4620-86cb-bee64db000c8\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABBV\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"f8a0a7c5-3522-46d8-8e99-60e882d75888\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABBV\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "ACN",
+            "attempts": [
+              {
+                "settlement_date": "2025-07-05",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"1055f930-bcc2-4349-99cb-19036af6d0c9\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ACN\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-12",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"084ee0e2-e03d-48d2-87d0-abe418d87158\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ACN\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"125ba191-786a-4b10-8015-94af88db5f6c\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ACN\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "ADBE",
+            "attempts": [
+              {
+                "settlement_date": "2025-07-05",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"b46e97e1-3816-4233-9fa6-73f14e05cce3\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"ADBE\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-12",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"974d3518-a5e8-4a43-b686-a51467555d91\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"ADBE\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"791fd11c-21ca-4693-81fd-073dabab7979\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"ADBE\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "AMD",
+            "attempts": [
+              {
+                "settlement_date": "2025-07-05",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"2cafc7c4-a577-4be9-ba0c-3f556d522e2c\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AMD\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-12",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"74e243b0-9dc2-410a-ae86-7382dd5f1d58\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AMD\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"129bf6fd-30fe-42d7-8ebc-0e8b4ceaf3a5\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AMD\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          },
+          {
+            "symbol": "AES",
+            "attempts": [
+              {
+                "settlement_date": "2025-07-05",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"92e963bc-4839-42d8-b22b-67a4757e167f\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AES\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-12",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"c890a905-cfcf-4f07-b3bd-f805893e1ad5\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AES\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              },
+              {
+                "settlement_date": "2025-07-15",
+                "quantity": null,
+                "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"50eb727c-04c5-4426-a897-29892081ffac\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AES\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+              }
+            ],
+            "chosen_date": "",
+            "currentShortPositionQuantity": null,
+            "totalWeeklyShareQuantity": null,
+            "record": null
+          }
+        ],
+        "purple_response": {
+          "status": "error",
+          "requested_settlement_date": "2025-07-15",
+          "dataset_name": "weeklySummary",
+          "best_symbol": "",
+          "best_quantity": 0,
+          "results": [
+            {
+              "symbol": "ABBV",
+              "attempts": [
+                {
+                  "settlement_date": "2025-07-05",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"6025aeec-f046-4db0-b004-2f9d1bfad2ab\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABBV\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-12",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"3ff97d0e-d442-4620-86cb-bee64db000c8\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABBV\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"f8a0a7c5-3522-46d8-8e99-60e882d75888\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ABBV\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "ACN",
+              "attempts": [
+                {
+                  "settlement_date": "2025-07-05",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"1055f930-bcc2-4349-99cb-19036af6d0c9\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ACN\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-12",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"084ee0e2-e03d-48d2-87d0-abe418d87158\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ACN\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"125ba191-786a-4b10-8015-94af88db5f6c\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL\",\"fieldValue\":\"ACN\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "ADBE",
+              "attempts": [
+                {
+                  "settlement_date": "2025-07-05",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"b46e97e1-3816-4233-9fa6-73f14e05cce3\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"ADBE\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-12",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"974d3518-a5e8-4a43-b686-a51467555d91\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"ADBE\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"791fd11c-21ca-4693-81fd-073dabab7979\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"ADBE\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "AMD",
+              "attempts": [
+                {
+                  "settlement_date": "2025-07-05",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"2cafc7c4-a577-4be9-ba0c-3f556d522e2c\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AMD\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-12",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"74e243b0-9dc2-410a-ae86-7382dd5f1d58\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AMD\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"129bf6fd-30fe-42d7-8ebc-0e8b4ceaf3a5\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AMD\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            },
+            {
+              "symbol": "AES",
+              "attempts": [
+                {
+                  "settlement_date": "2025-07-05",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"92e963bc-4839-42d8-b22b-67a4757e167f\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AES\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-05\",\"startDate\":\"2025-07-05\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-12",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"c890a905-cfcf-4f07-b3bd-f805893e1ad5\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AES\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-12\",\"startDate\":\"2025-07-12\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                },
+                {
+                  "settlement_date": "2025-07-15",
+                  "quantity": null,
+                  "error": "client_short.py failed: Error: FINRA dataset query failed (400): {\"statusCode\":400,\"statusDescription\":\"Bad Request\",\"requestId\":\"50eb727c-04c5-4426-a897-29892081ffac\",\"message\":\"The following fields are not available in this dataset: [symbolCode]\",\"dataRequest\":{\"async\":false,\"offset\":0,\"compareFilters\":[{\"fieldName\":\"symbolCode\",\"compareType\":\"EQUAL,\"fieldValue\":\"AES\"}],\"dataVersion\":1,\"dateRangeFilters\":[{\"fieldName\":\"settlementDate\",\"endDate\":\"2025-07-15\",\"startDate\":\"2025-07-15\"}],\"datasetName\":\"weeklysummary\",\"format\":\"application/json\",\"limit\":1000,\"datasetGroup\":\"otcmarket\",\"versionedDatasetName\":\"weeklysummary\"}}"
+                }
+              ],
+              "chosen_date": "",
+              "currentShortPositionQuantity": null,
+              "totalWeeklyShareQuantity": null,
+              "record": null
+            }
+          ],
+          "errors": [],
+          "dataset_group": "otcmarket"
+        }
+      }
+    },
+    {
+      "name": "case-6",
+      "status": "error",
+      "duration_seconds": 300.038,
+      "details": {
+        "error": "No result artifact found",
+        "status_message": "Purple agent call failed: Timeout Error: Client Request timed out"
+      }
+    },
+    {
+      "name": "case-7",
+      "status": "error",
+      "duration_seconds": 0.017,
+      "details": {
+        "error": "No result artifact found",
+        "status_message": "Provide symbol or symbols in config."
+      }
+    },
+    {
+      "name": "case-8",
+      "status": "error",
+      "duration_seconds": 0.011,
+      "details": {
+        "error": "No result artifact found",
+        "status_message": "Provide symbol or symbols in config."
+      }
+    }
+  ],
+  "created_at": "2026-01-29T03:13:09.999838Z",
+  "green_agent_id": "019bab8b-9244-7e73-8dbd-01234484908b",
+  "purple_agent_id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "purple_image": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "config": {
+    "cases": [
+      {
+        "name": "case-1",
+        "settlement_date": "2025-05-15",
+        "symbols": [
+          "DVA",
+          "WMT",
+          "BIIB"
+        ],
+        "question": "For the given symbols and settlement date, find short interest and identify the symbol with the highest value.",
+        "dataset_name_eval": "consolidatedShortInterest"
+      },
+      {
+        "name": "case-2",
+        "settlement_date": "2025-05-31",
+        "symbols": [
+          "FDS",
+          "LII",
+          "WST",
+          "HAS",
+          "EQT"
+        ],
+        "question": "For the given symbols and settlement date, find short interest and identify the symbol with the highest value.",
+        "dataset_name_eval": "consolidatedShortInterest"
+      },
+      {
+        "name": "case-3",
+        "settlement_date": "2025-06-15",
+        "symbols": [
+          "WMB",
+          "PSX",
+          "ZBH",
+          "CPRT",
+          "WRB",
+          "MRK",
+          "HLT",
+          "GM",
+          "RF",
+          "TJX"
+        ],
+        "question": "For the given symbols and settlement date, find short interest and identify the symbol with the highest value.",
+        "dataset_name_eval": "consolidatedShortInterest"
+      },
+      {
+        "name": "case-4",
+        "settlement_date": "2025-06-30",
+        "symbols": [
+          "MMM",
+          "AOS",
+          "ABT"
+        ],
+        "question": "Find weekly total number of shares reported for the symbol and date, then identify the symbol with the highest total.",
+        "dataset_name_eval": "weeklySummary"
+      },
+      {
+        "name": "case-5",
+        "settlement_date": "2025-07-15",
+        "symbols": [
+          "ABBV",
+          "ACN",
+          "ADBE",
+          "AMD",
+          "AES"
+        ],
+        "question": "Find weekly total number of shares reported for the symbol and date, then identify the symbol with the highest total.",
+        "dataset_name_eval": "weeklySummary"
+      },
+      {
+        "name": "case-6",
+        "settlement_date": "2025-07-31",
+        "symbols": [
+          "AFL",
+          "A",
+          "APD",
+          "ABNB",
+          "AKAM",
+          "ALB",
+          "ARE",
+          "ALGN",
+          "ALLE",
+          "LNT"
+        ],
+        "question": "Find weekly total number of shares reported for the symbol and date, then identify the symbol with the highest total.",
+        "dataset_name_eval": "weeklySummary"
+      },
+      {
+        "name": "case-7",
+        "settlement_date": "2025-01-21",
+        "symbols": [],
+        "question": "On the trade date 2025-01-21, what was the dealer customer volume for Treasuries up to 7 years maturity (On-the-run)?",
+        "dataset_group_eval": "fixedIncomeMarket",
+        "dataset_name_eval": "treasuryDailyAggregates"
+      },
+      {
+        "name": "case-8",
+        "settlement_date": "2025-01-22",
+        "symbols": [],
+        "question": "On the trade date 2025-01-22, what was the dealer customer volume for Treasuries up to 3 years maturity (On-the-run)?",
+        "dataset_group_eval": "fixedIncomeMarket",
+        "dataset_name_eval": "treasuryDailyAggregates"
+      }
+    ]
+  }
+}
