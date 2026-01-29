@@ -358,6 +358,15 @@ def main() -> None:
                 "finra_client_id": finra_client_id,
                 "finra_client_secret": finra_client_secret,
             }
+            question = case.get("question")
+            if question:
+                case_config["question"] = question
+            dataset_name_eval = case.get("dataset_name_eval") or case.get("datasetNameEval")
+            if dataset_name_eval:
+                case_config["dataset_name_eval"] = dataset_name_eval
+            dataset_group_eval = case.get("dataset_group_eval") or case.get("datasetGroupEval")
+            if dataset_group_eval:
+                case_config["dataset_group_eval"] = dataset_group_eval
             result = asyncio.run(
                 _run_case(
                     green_url="http://localhost:9009",
