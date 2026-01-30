@@ -1,0 +1,416 @@
+{
+  "id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "status": "fail",
+  "passed": 0,
+  "total": 10,
+  "total_duration_seconds": 2.995,
+  "average_duration_seconds": 0.299,
+  "results": [
+    {
+      "name": "case-1",
+      "status": "fail",
+      "duration_seconds": 0.985,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing results list.",
+          "Missing results for symbols: BIIB, DVA, WMT",
+          "No numeric short interest values returned."
+        ],
+        "symbols": [
+          "DVA",
+          "WMT",
+          "BIIB"
+        ],
+        "settlement_date": "2025-05-15",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [],
+        "purple_response": {
+          "status": "error",
+          "error": "Error code: 404 - {'error': {'message': 'The model `GPT-5.1` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"
+        }
+      }
+    },
+    {
+      "name": "case-2",
+      "status": "fail",
+      "duration_seconds": 0.303,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing results list.",
+          "Missing results for symbols: EQT, FDS, HAS, LII, WST",
+          "No numeric short interest values returned."
+        ],
+        "symbols": [
+          "FDS",
+          "LII",
+          "WST",
+          "HAS",
+          "EQT"
+        ],
+        "settlement_date": "2025-05-31",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [],
+        "purple_response": {
+          "status": "error",
+          "error": "Error code: 404 - {'error': {'message': 'The model `GPT-5.1` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"
+        }
+      }
+    },
+    {
+      "name": "case-3",
+      "status": "fail",
+      "duration_seconds": 0.19,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing results list.",
+          "Missing results for symbols: CPRT, GM, HLT, MRK, PSX, RF, TJX, WMB, WRB, ZBH",
+          "No numeric short interest values returned."
+        ],
+        "symbols": [
+          "WMB",
+          "PSX",
+          "ZBH",
+          "CPRT",
+          "WRB",
+          "MRK",
+          "HLT",
+          "GM",
+          "RF",
+          "TJX"
+        ],
+        "settlement_date": "2025-06-15",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [],
+        "purple_response": {
+          "status": "error",
+          "error": "Error code: 404 - {'error': {'message': 'The model `GPT-5.1` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"
+        }
+      }
+    },
+    {
+      "name": "case-4",
+      "status": "fail",
+      "duration_seconds": 0.338,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing results list.",
+          "Missing results for symbols: ABT, AOS, MMM",
+          "No numeric weekly share values returned."
+        ],
+        "symbols": [
+          "MMM",
+          "AOS",
+          "ABT"
+        ],
+        "settlement_date": "2025-06-30",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [],
+        "purple_response": {
+          "status": "error",
+          "error": "Error code: 404 - {'error': {'message': 'The model `GPT-5.1` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"
+        }
+      }
+    },
+    {
+      "name": "case-5",
+      "status": "fail",
+      "duration_seconds": 0.351,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing results list.",
+          "Missing results for symbols: ABBV, ACN, ADBE, AES, AMD",
+          "No numeric weekly share values returned."
+        ],
+        "symbols": [
+          "ABBV",
+          "ACN",
+          "ADBE",
+          "AMD",
+          "AES"
+        ],
+        "settlement_date": "2025-07-15",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [],
+        "purple_response": {
+          "status": "error",
+          "error": "Error code: 404 - {'error': {'message': 'The model `GPT-5.1` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"
+        }
+      }
+    },
+    {
+      "name": "case-6",
+      "status": "fail",
+      "duration_seconds": 0.204,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing results list.",
+          "Missing results for symbols: A, ABNB, AFL, AKAM, ALB, ALGN, ALLE, APD, ARE, LNT",
+          "No numeric weekly share values returned."
+        ],
+        "symbols": [
+          "AFL",
+          "A",
+          "APD",
+          "ABNB",
+          "AKAM",
+          "ALB",
+          "ARE",
+          "ALGN",
+          "ALLE",
+          "LNT"
+        ],
+        "settlement_date": "2025-07-31",
+        "requested_date_reason": "provided",
+        "best_symbol": null,
+        "best_quantity": null,
+        "results": [],
+        "purple_response": {
+          "status": "error",
+          "error": "Error code: 404 - {'error': {'message': 'The model `GPT-5.1` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}"
+        }
+      }
+    },
+    {
+      "name": "case-7",
+      "status": "fail",
+      "duration_seconds": 0.069,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing dataset_group.",
+          "Missing treasury record for the requested trade date.",
+          "Missing dealerCustomerVolume for the requested trade date."
+        ],
+        "trade_date": "2025-01-21",
+        "dealerCustomerVolume": null,
+        "record": null,
+        "purple_response": {
+          "status": "error",
+          "error": "name '_is_treasury_delta_question' is not defined"
+        }
+      }
+    },
+    {
+      "name": "case-8",
+      "status": "fail",
+      "duration_seconds": 0.06,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing dataset_group.",
+          "Missing treasury record for the requested trade date.",
+          "Missing dealerCustomerVolume for the requested trade date."
+        ],
+        "trade_date": "2025-01-22",
+        "dealerCustomerVolume": null,
+        "record": null,
+        "purple_response": {
+          "status": "error",
+          "error": "name '_is_treasury_delta_question' is not defined"
+        }
+      }
+    },
+    {
+      "name": "case-9",
+      "status": "fail",
+      "duration_seconds": 0.06,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing dataset_group.",
+          "Purple response missing treasury candidates list.",
+          "No treasury candidates matched the requested trade date/benchmark.",
+          "Missing best_years_to_maturity for max-volume question.",
+          "Missing best_dealer_customer_volume for max-volume question.",
+          "Missing treasury record for the requested trade date."
+        ],
+        "trade_date": "2025-01-27",
+        "best_years_to_maturity": "",
+        "best_dealer_customer_volume": null,
+        "record": null,
+        "candidates": [],
+        "purple_response": {
+          "status": "error",
+          "error": "name '_is_treasury_delta_question' is not defined"
+        }
+      }
+    },
+    {
+      "name": "case-10",
+      "status": "fail",
+      "duration_seconds": 0.06,
+      "details": {
+        "status": "fail",
+        "errors": [
+          "Purple response missing dataset_name.",
+          "Purple response missing dataset_group.",
+          "Treasury candidates missing for delta evaluation.",
+          "No overlapping maturity buckets for delta evaluation.",
+          "Missing best_years_to_maturity for delta question.",
+          "Missing best_dealer_customer_volume_delta for delta question."
+        ],
+        "trade_date": "2025-01-27",
+        "previous_trade_date": "2024-01-27",
+        "best_years_to_maturity": "",
+        "best_dealer_customer_volume_delta": null,
+        "record_current": null,
+        "record_previous": null,
+        "candidates_current": [],
+        "candidates_previous": [],
+        "purple_response": {
+          "status": "error",
+          "error": "name '_is_treasury_delta_question' is not defined"
+        }
+      }
+    }
+  ],
+  "created_at": "2026-01-30T22:09:07.113843Z",
+  "green_agent_id": "019bab8b-9244-7e73-8dbd-01234484908b",
+  "purple_agent_id": "019bc3a1-4bc7-7682-bc2a-9ce12d09865e",
+  "purple_image": "ghcr.io/wczubal1/purpleagentwitty:latest",
+  "config": {
+    "cases": [
+      {
+        "name": "case-1",
+        "settlement_date": "2025-05-15",
+        "symbols": [
+          "DVA",
+          "WMT",
+          "BIIB"
+        ],
+        "question": "For the given symbols and settlement date, find short interest and identify the symbol with the highest value.",
+        "dataset_name_eval": "consolidatedShortInterest"
+      },
+      {
+        "name": "case-2",
+        "settlement_date": "2025-05-31",
+        "symbols": [
+          "FDS",
+          "LII",
+          "WST",
+          "HAS",
+          "EQT"
+        ],
+        "question": "For the given symbols and settlement date, find short interest and identify the symbol with the highest value.",
+        "dataset_name_eval": "consolidatedShortInterest"
+      },
+      {
+        "name": "case-3",
+        "settlement_date": "2025-06-15",
+        "symbols": [
+          "WMB",
+          "PSX",
+          "ZBH",
+          "CPRT",
+          "WRB",
+          "MRK",
+          "HLT",
+          "GM",
+          "RF",
+          "TJX"
+        ],
+        "question": "For the given symbols and settlement date, find short interest and identify the symbol with the highest value.",
+        "dataset_name_eval": "consolidatedShortInterest"
+      },
+      {
+        "name": "case-4",
+        "settlement_date": "2025-06-30",
+        "symbols": [
+          "MMM",
+          "AOS",
+          "ABT"
+        ],
+        "question": "Find weekly total number of shares reported for the symbol and date, then identify the symbol with the highest total.",
+        "dataset_name_eval": "weeklySummary"
+      },
+      {
+        "name": "case-5",
+        "settlement_date": "2025-07-15",
+        "symbols": [
+          "ABBV",
+          "ACN",
+          "ADBE",
+          "AMD",
+          "AES"
+        ],
+        "question": "Find weekly total number of shares reported for the symbol and date, then identify the symbol with the highest total.",
+        "dataset_name_eval": "weeklySummary"
+      },
+      {
+        "name": "case-6",
+        "settlement_date": "2025-07-31",
+        "symbols": [
+          "AFL",
+          "A",
+          "APD",
+          "ABNB",
+          "AKAM",
+          "ALB",
+          "ARE",
+          "ALGN",
+          "ALLE",
+          "LNT"
+        ],
+        "question": "Find weekly total number of shares reported for the symbol and date, then identify the symbol with the highest total.",
+        "dataset_name_eval": "weeklySummary"
+      },
+      {
+        "name": "case-7",
+        "settlement_date": "2025-01-21",
+        "symbols": [],
+        "question": "On the trade date 2025-01-21, what was the dealer customer volume for Treasuries up to 7 years maturity (On-the-run)?",
+        "dataset_group_eval": "fixedIncomeMarket",
+        "dataset_name_eval": "treasuryDailyAggregates"
+      },
+      {
+        "name": "case-8",
+        "settlement_date": "2025-01-22",
+        "symbols": [],
+        "question": "On the trade date 2025-01-22, what was the dealer customer volume for Treasuries up to 3 years maturity (On-the-run)?",
+        "dataset_group_eval": "fixedIncomeMarket",
+        "dataset_name_eval": "treasuryDailyAggregates"
+      },
+      {
+        "name": "case-9",
+        "settlement_date": "2025-01-27",
+        "symbols": [],
+        "question": "On the trade date 2025-01-27, what was the maturity of Treasuries with the highest dealer customer volume (On-the-run)?",
+        "dataset_group_eval": "fixedIncomeMarket",
+        "dataset_name_eval": "treasuryDailyAggregates"
+      },
+      {
+        "name": "case-10",
+        "settlement_date": "2025-01-27",
+        "symbols": [],
+        "question": "On the trade date 2025-01-27, what was the maturity of Treasuries with the highest increase in the dealer customer volume over the last year (On-the-run)?",
+        "dataset_group_eval": "fixedIncomeMarket",
+        "dataset_name_eval": "treasuryDailyAggregates"
+      }
+    ]
+  }
+}
