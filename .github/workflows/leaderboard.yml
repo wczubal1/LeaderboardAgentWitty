@@ -52,6 +52,10 @@ jobs:
       - name: Install dependencies
         run: uv sync --locked
 
+      - name: Debug OPENAI_MODEL
+        run: |
+          echo "OPENAI_MODEL length: ${#OPENAI_MODEL}"
+
       - name: Run benchmark
         run: |
           CMD="uv run python scripts/run_benchmark.py --green-image \"$GREEN_IMAGE\" --purple-image \"$PURPLE_IMAGE\""
